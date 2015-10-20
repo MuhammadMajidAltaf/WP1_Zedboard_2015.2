@@ -1,0 +1,45 @@
+10:03:58 **** Incremental Build of configuration Debug for project adc ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:130:37: error: 'XPAR_PS7_I2C_0_DEVICE_ID' undeclared (first use in this function)
+       Status = IicPsSelfTestExample(XPAR_PS7_I2C_0_DEVICE_ID);
+                                     ^
+../src/testperiph.c:130:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/testperiph.c:142:37: error: 'XPAR_PS7_I2C_1_DEVICE_ID' undeclared (first use in this function)
+       Status = IicPsSelfTestExample(XPAR_PS7_I2C_1_DEVICE_ID);
+                                     ^
+../src/testperiph.c:213:36: error: 'XPAR_PS7_UART_0_DEVICE_ID' undeclared (first use in this function)
+       Status = UartPsPolledExample(XPAR_PS7_UART_0_DEVICE_ID);
+                                    ^
+../src/testperiph.c:229:21: error: 'XPAR_XIICPS_1_BASEADDR' undeclared (first use in this function)
+      XIicPs_ResetHw(XPAR_XIICPS_1_BASEADDR);
+                     ^
+../src/testperiph.c:231:6: warning: implicit declaration of function 'IicPsInitClockGenerator' [-Wimplicit-function-declaration]
+      Status = IicPsInitClockGenerator(XPAR_PS7_I2C_1_DEVICE_ID);
+      ^
+../src/testperiph.c:237:6: warning: implicit declaration of function 'SpiPs_Init_SPI' [-Wimplicit-function-declaration]
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+      ^
+../src/testperiph.c:237:30: error: 'XPAR_PS7_SPI_1_DEVICE_ID' undeclared (first use in this function)
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+                              ^
+../src/testperiph.c:245:19: warning: assignment makes pointer from integer without a cast [enabled by default]
+      registre_adc = 0x43C00000;
+                   ^
+../src/testperiph.c:251:10: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+          printf( "  %X = %X \r\n",registre_adc, *registre_adc);
+          ^
+../src/testperiph.c:251:10: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+../src/testperiph.c:255:19: warning: assignment makes pointer from integer without a cast [enabled by default]
+      registre_adc = 0x43C00000;
+                   ^
+../src/testperiph.c:263:21: warning: assignment makes pointer from integer without a cast [enabled by default]
+        registre_adc = 0x43C00000;
+                     ^
+make: *** [src/testperiph.o] Error 1
+
+10:04:01 Build Finished (took 2s.236ms)
+

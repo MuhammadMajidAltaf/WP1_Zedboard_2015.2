@@ -1,0 +1,81 @@
+{
+   Display-PortTypeClock: "true",
+   Display-PortTypeData: "true",
+   Display-PortTypeOthers: "true",
+   Display-PortTypeReset: "true",
+   DisplayMarkDebug: "0",
+   guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port TRIGGER_out -pg 1 -y 1080 -defaultsOSRD
+preplace port DDR -pg 1 -y 1000 -defaultsOSRD
+preplace port UART0_TX -pg 1 -y 1040 -defaultsOSRD
+preplace port SPI1_MOSI -pg 1 -y 1100 -defaultsOSRD
+preplace port leds_8bits -pg 1 -y 590 -defaultsOSRD
+preplace port SPI1_SCLK -pg 1 -y 1060 -defaultsOSRD
+preplace port UART0_RX -pg 1 -y 660 -defaultsOSRD
+preplace port SPI1_MISO -pg 1 -y 1120 -defaultsOSRD -right
+preplace port FIXED_IO -pg 1 -y 1020 -defaultsOSRD
+preplace port TRIG_IN -pg 1 -y 930 -defaultsOSRD -right
+preplace port SPI1_SS1 -pg 1 -y 1140 -defaultsOSRD
+preplace port SPI1_SS2 -pg 1 -y 1160 -defaultsOSRD
+preplace portBus ADC1_N -pg 1 -y 530 -defaultsOSRD
+preplace portBus SW_SERVICE -pg 1 -y 640 -defaultsOSRD
+preplace portBus ADC1_P -pg 1 -y 510 -defaultsOSRD
+preplace portBus ADC0_N -pg 1 -y 490 -defaultsOSRD
+preplace portBus adc_clk_N -pg 1 -y 60 -defaultsOSRD
+preplace portBus ADC0_P -pg 1 -y 470 -defaultsOSRD
+preplace portBus adc_clk_P -pg 1 -y 40 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 1170 -defaultsOSRD -orient R180
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 830 -defaultsOSRD
+preplace inst delay_input_0 -pg 1 -lvl 1 -y 480 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 590 -defaultsOSRD
+preplace inst selectio_wiz_0 -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace inst selectio_wiz_1 -pg 1 -lvl 2 -y 430 -defaultsOSRD
+preplace inst Twin_ADC_controller -pg 1 -lvl 3 -y 500 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 1250 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 1400 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 5 -y 50 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 5 610 1450 NJ 1450 NJ 1000 NJ 1000 NJ
+preplace netloc SW_SERVICE_1 1 0 3 NJ 640 NJ 510 1060
+preplace netloc ADC0_N_1 1 0 1 N
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 2 1120 680 1460
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 3 1 1510
+preplace netloc ADC1_P_1 1 0 1 N
+preplace netloc SPI1_MISO_1 1 1 5 650 1500 NJ 1500 NJ 1120 NJ 1120 NJ
+preplace netloc util_ds_buf_0_OBUF_DS_N 1 5 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 630 1220 NJ
+preplace netloc processing_system7_0_SPI1_SS_O 1 1 5 640 1510 NJ 1510 NJ 1140 NJ 1140 NJ
+preplace netloc util_ds_buf_0_OBUF_DS_P 1 5 1 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 200 940 590
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 2 1110 670 1470
+preplace netloc processing_system7_0_UART0_TX 1 1 5 680 1470 NJ 1470 NJ 1040 NJ 1040 NJ
+preplace netloc processing_system7_0_SPI1_SS1_O 1 1 5 620 1520 NJ 1520 NJ 1160 NJ 1160 NJ
+preplace netloc processing_system7_0_SPI1_MOSI_O 1 1 5 660 1490 NJ 1490 NJ 1100 NJ 1100 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 3 NJ 870 1090 650 1500
+preplace netloc ADC1_N_1 1 0 1 N
+preplace netloc ADC0_P_1 1 0 1 N
+preplace netloc xlconstant_0_dout 1 1 1 700
+preplace netloc rst_processing_system7_0_100M_peripheral_reset 1 0 2 170 380 590
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 710 1460 NJ 1460 NJ 1020 NJ 1020 NJ
+preplace netloc selectio_wiz_0_data_in_to_device 1 2 1 1070
+preplace netloc axi_gpio_0_GPIO 1 4 2 N 590 NJ
+preplace netloc Interface_ADC_0_TRIG_OUT 1 3 3 NJ 500 NJ 500 2870
+preplace netloc TRIG_IN_1 1 2 4 1130 690 NJ 520 NJ 520 2860
+preplace netloc delay_input_0_DDELAY_0 1 1 1 580
+preplace netloc selectio_wiz_1_data_in_to_device 1 2 1 1100
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 2 710 1230 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 180 920 690 650 1080 640 1460 50 NJ
+preplace netloc UART0_RX_1 1 0 2 NJ 950 580
+preplace netloc delay_input_0_DDELAY_1 1 1 1 710
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 2 190 930 600
+preplace netloc processing_system7_0_SPI1_SCLK_O 1 1 5 670 1480 NJ 1480 NJ 1060 NJ 1060 NJ
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 2 1140 660 1480
+levelinfo -pg 1 150 390 890 1330 1840 2740 2890
+",
+}
+{
+   da_axi4_cnt: "11",
+   da_board_cnt: "3",
+   da_bram_cntlr_cnt: "2",
+   da_ps7_cnt: "1",
+}

@@ -1,0 +1,302 @@
+// Acquisizione dati da modulo con doppio AD9628
+
+#include <stdio.h>
+#include "xiicps.h"
+#include "xparameters.h"
+#include "xscugic.h"
+#include "xdevcfg.h"
+#include "xdmaps.h"
+#include "dmaps_header.h"
+#include "xqspips.h"
+#include "qspips_header.h"
+#include "xspips.h"
+#include "spips_header.h"
+#include "xuartps.h"
+#include "uartps_header.h"
+#include "sleep.h"
+#include "xil_printf.h"
+#include "xstatus.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xuartps_hw.h"
+#include "pulse.h"
+
+#define TEST_BUFFER_SIZE	16
+#define CHAR_ESC		0x1b	/* 'ESC' character is used as terminator */
+#define UART_BASEADDR		XPAR_XUARTPS_0_BASEADDR
+#define UART_CLOCK_HZ		XPAR_XUARTPS_0_CLOCK_HZ
+#define UART2_BASEADDR		XPAR_XUARTPS_1_BASEADDR
+#define UART2_CLOCK_HZ		XPAR_XUARTPS_1_CLOCK_HZ
+
+#define IIC_DEVICE_ID		XPAR_XIICPS_0_DEVICE_ID
+#define IIC_SLAVE_ADDR		0x0C // DAC address
+#define IIC_SCLK_RATE		100000
+#define BUFFER_SIZE	132
+
+u8 RecvBuffer[TEST_BUFFER_SIZE];
+u8 RecvChar;
+u32 CntrlRegister;
+u32 CntrlRegister2;
+int IicPsMasterPolledExample(u16 DeviceId);
+int send_byte_to_uart(u16 DeviceId, u16 data);
+int val_led1, val_led2, val_hv;
+val_led1 = 300;
+val_led2 = 0;
+val_hv = 500;  	// valore in volts
+ch4_dac = 0;
+
+XUartPs Uart_Ps;		/* The instance of the UART Driver */
+XUartPs Uart_Ps2;		/* The instance of the UART Driver */
+
+XIicPs Iic;		/**< Instance of the IIC Device */
+u8 SendBuffer[BUFFER_SIZE];    /**< Buffer for Transmitting Data */
+//u8 RecvBuffer[BUFFER_SIZE];    /**< Buffer for Receiving Data */
+u8 pointer_byte;
+int Stato;
+   int main()
+   {
+      static XScuGic intc;
+      static XUartPs ps7_uart_0;
+      static XUartPs ps7_uart_1;
+      Xil_ICacheEnable();
+      Xil_DCacheEnable();
+
+    int Status,Index,i;
+    u8 trigger;
+
+	#define UART_DEVICE_ID                  XPAR_XUARTPS_0_DEVICE_ID	//definisci UART
+	#define UART2_DEVICE_ID                 XPAR_XUARTPS_1_DEVICE_ID
+
+    CntrlRegister =  XUartPs_ReadReg(UART_BASEADDR, XUARTPS_CR_OFFSET);
+    CntrlRegister2 = XUartPs_ReadReg(UART2_BASEADDR, XUARTPS_CR_OFFSET);
+
+    	XUartPs_WriteReg(UART_BASEADDR, XUARTPS_CR_OFFSET,
+    			  ((CntrlRegister & ~XUARTPS_CR_EN_DIS_MASK) |
+    			   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+
+    	XUartPs_WriteReg(UART2_BASEADDR, XUARTPS_CR_OFFSET,
+    	    			  ((CntrlRegister2 & ~XUARTPS_CR_EN_DIS_MASK) |
+    	    			   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+
+    // Configurazione UART0
+    	XUartPs_Config *Config;
+        Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+        XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+        XUartPs_SetBaudRate(&Uart_Ps, 115200);
+
+    // Configurazione UART1
+        XUartPs_Config *Config2;
+        Config2 = XUartPs_LookupConfig(UART2_DEVICE_ID);
+        XUartPs_CfgInitialize(&Uart_Ps2, Config2, Config2->BaseAddress);
+        XUartPs_SetBaudRate(&Uart_Ps2, 115200);
+
+// Configurazione I2C
+    	Stato = IicPsMasterPolledExample(IIC_DEVICE_ID);
+    	if (Stato != XST_SUCCESS) {
+    		XUartPs_Send(&Uart_Ps, "IIC Master non riceve risposta dal DAC\r\n", 40);
+    		return XST_FAILURE;
+    	}
+//    	XUartPs_Send(&Uart_Ps, "Risposta ricevuta dal DAC OK funziona\r\n", 39);
+//    	return XST_SUCCESS;
+sleep(1);
+
+while(1)
+{
+
+
+// INIZIALIZZAZIONE AD9628
+    	XUartPs_Send(&Uart_Ps, "INIZIALIZZAZIONE...\r\n", 21);
+    	Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);	// funzione di setup_ADC
+     	if (Status == 0x89) {XUartPs_Send(&Uart_Ps, "OK ADC init\r\n", 13); }  else { XUartPs_Send(&Uart_Ps, "ATTENTION! ADC doesn't work\r\n", 29); }
+
+
+/*
+Running = TRUE;
+while (Running) {
+    	while (!XUartPs_IsReceiveData(UART_BASEADDR));
+
+    			RecvChar = XUartPs_ReadReg(UART_BASEADDR,
+    						    XUARTPS_FIFO_OFFSET);
+    			if (('a' <= RecvChar) && ('z' >= RecvChar)) {
+
+    				RecvChar = RecvChar - 'a' + 'A';
+    			}
+    			else if (('A' <= RecvChar) && ('Z' >= RecvChar)) {
+    				// Convert the small letter to a Capital.
+    				RecvChar = RecvChar - 'A' + 'a';
+    			}
+    			else if (CHAR_ESC == RecvChar) {
+    				return;
+    			}
+    			XUartPs_WriteReg(UART_BASEADDR,  XUARTPS_FIFO_OFFSET,
+    					  RecvChar);
+}
+
+while(1){
+    	XUartPs_Recv(&Uart_Ps, RecvBuffer, 2);
+//    	printf(RecvBuffer);
+
+//    	XUartPs_Send(&Uart_Ps, "X", 1);
+		if (RecvBuffer[0]=="G"||RecvBuffer[0]=="O")
+		{
+			XUartPs_Send(&Uart_Ps, "TRIGGER...\r\n", 10);
+			break;
+		}
+
+}
+
+*/
+
+
+// Lettura BRAM canali ADC0 e ADC1
+unsigned int *buffer1, *buffer2;
+buffer1 = 0x40010000;	// ADC inbasso sulla scheda
+buffer2 = 0x40000000;
+int w,y,ADC0A,ADC0B,ADC1A,ADC1B;
+
+unsigned int *led, *shot;
+led = 0x41200000;
+shot = 0x41210000;
+
+
+
+//*shot = 0x000000FF;//acquisisco segnale in BRAM
+GpioPolledExample(GPIO_DEVICE_ID, &InputData);// invio ASY_TRIG su led driver
+//usleep(1);
+//*shot = 0x00000000;
+
+*led = 0x000000FF;//accendo led
+//XUartPs_Send(&Uart_Ps, "UUB", 3);// invio header trasmissione seriale
+print("UUB");// invio header trasmissione seriale
+for ( w = 0; w < 100; w++) //numero dilocazioni BRAM da inviare su seriale.
+//for ( w = 513; w < 1027; w++) //numero dilocazioni BRAM da inviare su seriale.
+//for ( w = 100; w < 613; w++) //numero dilocazioni BRAM da inviare su seriale.
+       {
+       ADC0A = *buffer1;
+       ADC0B = *buffer1&0xfff;
+       ADC1A = *buffer2;
+       ADC1B = *buffer2&0xfff;
+
+       y = (ADC0A>>16)&0xfff;
+       XUartPs_Send(&Uart_Ps2, &y, 2);
+       usleep(3000);
+       XUartPs_Send(&Uart_Ps2, &ADC0B, 2);
+       usleep(5000);
+
+       buffer1 = buffer1 + 1;
+       buffer2 = buffer2 + 1;
+       }
+
+XUartPs_Send(&Uart_Ps, "Fine invio dati...\n", 19);
+*led = 0x00000000;
+
+Xil_DCacheDisable();
+Xil_ICacheDisable();
+
+sleep(2);
+}
+return 0;
+
+}
+/////////////////////////////////////////////////////
+// Invio byte su porta seriale specificata
+int send_byte_to_uart(u16 DeviceId, u16 data)
+{
+        	XUartPs_Send(&Uart_Ps, &data, 2);
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//LED CONTROLLER
+//////////////////////////////////////////////////////////////////////////////////
+int IicPsMasterPolledExample(u16 DeviceId)
+{
+	int Stato;
+	XIicPs_Config *Config;
+	int Index;
+
+	Config = XIicPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		return XST_FAILURE;
+	}
+
+	Stato = XIicPs_CfgInitialize(&Iic, Config, Config->BaseAddress);
+	if (Stato != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	Stato = XIicPs_SelfTest(&Iic);
+	if (Stato != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);  //Set the IIC serial clock rate
+	pointer_byte = 0x01;
+// calcolo dei dati da inviare si I2c per programmare DAC
+//	ctrl_reg = 112 #registro di controllo del DAC impostato 01110000 (4 bit significativi)
+//	a = (val_ch1/64)+ctrl_reg	#primi 4 bit piu' significativi di val trasferiti nei meno 4 significativi di a e aggiungo ctrl_reg
+//	b = (val_ch1 & 0x3F)*4
+//	values1 = [a, b]
+
+	val_hv = val_hv / 1.85;
+// Preparo i byte da inviare in sendbuffer
+// calcolo canale 1
+	SendBuffer[0] = 0x01;	//Seleziono canale del DAC
+	SendBuffer[1] = (val_hv/64) + 112; //primi 4 bit piu' significativi di val trasferiti nei meno 4 significativi di a e aggiungo ctrl_reg=112
+	SendBuffer[2] = (val_hv & 0x3F)*4;
+	XIicPs_MasterSendPolled(&Iic, SendBuffer, 3, IIC_SLAVE_ADDR); // invio al DAC tutti i byte di programmazione di 4 canali
+	usleep(1000);
+
+// calcolo canale 2
+	SendBuffer[0] = 0x02;	//Seleziono canale del DAC
+	SendBuffer[1] = (val_led1/64) + 112; //primi 4 bit piu' significativi di val trasferiti nei meno 4 significativi di a e aggiungo ctrl_reg=112
+	SendBuffer[2] = (val_led1 & 0x3F)*4;
+	XIicPs_MasterSendPolled(&Iic, SendBuffer, 3, IIC_SLAVE_ADDR); // invio al DAC tutti i byte di programmazione di 4 canali
+	usleep(1000);
+
+// calcolo canale 3
+	SendBuffer[0] = 0x04;	//Seleziono canale del DAC
+	SendBuffer[1] = (val_led2/64) + 112; //primi 4 bit piu' significativi di val trasferiti nei meno 4 significativi di a e aggiungo ctrl_reg=112
+	SendBuffer[2] = (val_led2 & 0x3F)*4;
+	XIicPs_MasterSendPolled(&Iic, SendBuffer, 3, IIC_SLAVE_ADDR); // invio al DAC tutti i byte di programmazione di 4 canali
+	usleep(1000);
+
+// calcolo canale 4
+	SendBuffer[0] = 0x08;	//Seleziono canale del DAC
+	SendBuffer[1] = (ch4_dac/64) + 112; //primi 4 bit piu' significativi di val trasferiti nei meno 4 significativi di a e aggiungo ctrl_reg=112
+	SendBuffer[2] = (ch4_dac & 0x3F)*4;
+	XIicPs_MasterSendPolled(&Iic, SendBuffer, 3, IIC_SLAVE_ADDR); // invio al DAC tutti i byte di programmazione di 4 canali
+
+/*
+// leggo e visualizzo dati per controllo se necessario
+//	 XIicPs_MasterRecvPolled(&Iic, RecvBuffer, 1, IIC_SLAVE_ADDR);
+//	 xil_printf("dato %X \r\n",RecvBuffer[0]);
+
+	 XIicPs_MasterSendPolled(&Iic, 0x0F, 1, IIC_SLAVE_ADDR);
+
+	 XIicPs_MasterRecvPolled(&Iic, RecvBuffer, 2, IIC_SLAVE_ADDR);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[0]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[1]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[2]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[3]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[4]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[5]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[6]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[7]);
+
+	Status = XIicPs_MasterRecvPolled(&Iic, RecvBuffer, 3, IIC_SLAVE_ADDR);
+		if (Status != XST_SUCCESS) {
+				return XST_FAILURE;
+		}
+
+		for (Index = 0; Index < BUFFER_SIZE; Index++) {
+				xil_printf("dato %X \r\n",RecvBuffer[Index]);
+			}
+
+	 	int Status;
+	 		u32 InputData;
+
+	 		printf("impulso su pin 9 - JE8 \r\n");*/
+//	 		GpioPolledExample(GPIO_DEVICE_ID, &InputData);
+
+	return XST_SUCCESS;
+}

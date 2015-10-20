@@ -1,0 +1,142 @@
+/*
+ *TEST AD 9628
+ */
+
+//#include <stdio.h>
+//#include "devcfg_header.h"
+#include "xparameters.h"
+#include "xscugic.h"
+#include "xdevcfg.h"
+#include "xdmaps.h"
+#include "dmaps_header.h"
+#include "xqspips.h"
+#include "qspips_header.h"
+#include "xspips.h"
+#include "spips_header.h"
+#include "xuartps.h"
+#include "uartps_header.h"
+int main() 
+{
+   static XScuGic intc;
+
+   static XUartPs ps7_uart_0;
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+
+/*   {
+      int Status;
+      
+      print("\r\n Running QspiSelfTestExample() for ps7_qspi_0...\r\n");
+      
+      Status = QspiPsSelfTestExample(XPAR_PS7_QSPI_0_DEVICE_ID);
+      
+      if (Status == 0) { print("QspiPsSelfTestExample PASSED\r\n"); }
+      else { print("QspiPsSelfTestExample FAILED\r\n"); }
+   }
+
+
+   {
+      int Status;
+      
+      print("\r\n Running ScuTimerPolledExample() for ps7_scutimer_0...  : ");
+      Status = ScuTimerPolledExample(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+      if (Status == 0) { print("PASSED\r\n"); }
+      else { print("FAILED\r\n"); }
+
+      print("\r\n Running Interrupt Test  for ps7_scutimer_0...  : ");
+      Status = ScuTimerIntrExample(&intc, &ps7_scutimer_0, \
+                                 XPAR_PS7_SCUTIMER_0_DEVICE_ID, \
+                                 XPAR_PS7_SCUTIMER_0_INTR);
+	
+      if (Status == 0) { print("PASSED\r\n"); }
+      else { print("FAILED\r\n"); }
+   }
+
+
+
+   {
+      int Status;
+      
+      print("\r\n Running SpiPsSelfTestExample() for ps7_spi_0...\r\n");
+      Status = SpiPsSelfTestExample(XPAR_PS7_SPI_0_DEVICE_ID);
+      if (Status == 0) { print("SpiPsSelfTestExample PASSED\r\n"); }
+      else { print("SpiPsSelfTestExample FAILED\r\n"); }
+   }
+
+   {
+      int Status;
+      
+      print("\r\n Running SpiPsSelfTestExample() for ps7_spi_1...\r\n");
+      Status = SpiPsSelfTestExample(XPAR_PS7_SPI_1_DEVICE_ID);
+      if (Status == 0) { print("SpiPsSelfTestExample PASSED\r\n"); }
+      else { print("SpiPsSelfTestExample FAILED\r\n"); }
+   }
+
+*/
+
+   {
+     int Status;
+
+     // INIZIALIZZAZIONE AD9628
+     print("Inizializzazione AD 9628 : ");
+     Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+     if (Status == 0) { print("OK from SPI..."); }  else { print("SPI FAILED"); }
+     print("\r\n");
+   }
+
+   // test dei registri
+     unsigned int *registre_adc;
+     registre_adc = 0x43c00000;
+     int i;
+
+     printf("\r\n Visualizzazione registri interni interfaccia ADC : \r\n");
+     for ( i = 0; i < 3; i++)
+     {
+         printf( "  %X = %X \r\n",registre_adc, *registre_adc);
+//         printf( "Channel A = %X,  Channel B = %X \r\n ",*registre_adc >>16,*registre_adc & 0xffff);
+    	 registre_adc = registre_adc + 1;
+
+     }
+//##########################################################################################################
+
+     printf( "Output ADC Channels\r\n ");
+     unsigned int *registre_adc0;
+          registre_adc0 = 0x43c00000;
+
+         unsigned int a;
+         a = *registre_adc0;
+
+     unsigned int *registre_adc1;
+          registre_adc1 = 0x43c00004;
+          unsigned int b;
+          b = *registre_adc1;
+
+          unsigned int *registre_adc2;
+                   registre_adc2 = 0x43c00008;
+          unsigned int c;
+     while(1)
+     {
+
+    	 printf( "%X",a);
+    	 printf( "  ADC0 = Channel A = %X,  Channel B = %X \r\n ",a >>16,a & 0xffff);
+
+    	 printf( "%X",b);
+    	 printf( "  ADC1 = Channel A = %X,  Channel B = %X \r\n ",b >>16,b & 0xffff);
+/*
+    	 printf( "%X",*registre_adc2);
+    	     	 printf( "  ADC2 = Channel A = %X,  Channel B = %X \r\n ",*registre_adc2 >>16,*registre_adc2 & 0xffff);
+
+*/
+    	 for( i = 0; i<500000;i++)
+    	 {
+    		 registre_adc = 0x43C00000;
+    	 }
+     }
+/*
+*/
+
+   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

@@ -1,0 +1,526 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Oct 05 14:10:53 2015
+# Process ID: 14844
+# Log file: C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.runs/impl_1/WP1_system.vdi
+# Journal file: C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source WP1_system.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 188 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.xdc] for cell 'processing_system7_0/inst'
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.xdc] for cell 'processing_system7_0/inst'
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0.xdc] for cell 'axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0.xdc] for cell 'axi_gpio_0/U0'
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc] for cell 'axi_gpio_0/U0'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:3]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:5]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:7]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:9]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:11]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:13]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:15]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc:17]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0_board.xdc] for cell 'axi_gpio_0/U0'
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0.xdc] for cell 'rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0.xdc] for cell 'rst_processing_system7_0_100M'
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0_board.xdc] for cell 'rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0_board.xdc] for cell 'rst_processing_system7_0_100M'
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_0_0/WP1_system_selectio_wiz_0_0.xdc] for cell 'selectio_wiz_0/U0'
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_0_0/WP1_system_selectio_wiz_0_0.xdc] for cell 'selectio_wiz_0/U0'
+Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_1_0/WP1_system_selectio_wiz_1_0.xdc] for cell 'selectio_wiz_1/U0'
+Finished Parsing XDC File [c:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_1_0/WP1_system_selectio_wiz_1_0.xdc] for cell 'selectio_wiz_1/U0'
+Parsing XDC File [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[0]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[1]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[2]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[3]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[4]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[5]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[6]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[7]'. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc:117]
+Finished Parsing XDC File [C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.srcs/constrs_1/imports/WP1/roberto_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'WP1_system'...
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: WP1_system
+WARNING: [Memdata 28-79] No processor module instance paths found in the source hierarchy. Please make sure that the source hierarchy is correctly established for the current 'top' module and the processor modules are part of this hierarchy.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 26 instances
+
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 525.469 ; gain = 331.348
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.407 . Memory (MB): peak = 527.070 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1dc48897a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.989 . Memory (MB): peak = 925.219 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 324 cells.
+Phase 2 Constant Propagation | Checksum: 15bec5c19
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 925.219 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 754 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 699 unconnected cells.
+Phase 3 Sweep | Checksum: 171a9db91
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 925.219 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 171a9db91
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 925.219 ; gain = 0.000
+Implement Debug Cores | Checksum: b772101c
+Logic Optimization | Checksum: b772101c
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Will skip clock gating for clocks with period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 8 BRAM(s) out of a total of 10 has been updated to save power.
+    Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 20
+Ending PowerOpt Patch Enables Task | Checksum: 171a9db91
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 171a9db91
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1005.066 ; gain = 79.848
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 10 Warnings, 16 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 1005.066 ; gain = 479.598
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.395 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: cc6833e8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.1 Mandatory Logic Optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1.1 Mandatory Logic Optimization | Checksum: 6e115225
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.271 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.2 Build Super Logic Region (SLR) Database
+Phase 2.1.2 Build Super Logic Region (SLR) Database | Checksum: 6e115225
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.307 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.3 Add Constraints
+Phase 2.1.3 Add Constraints | Checksum: 6e115225
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.313 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.4 Build Shapes/ HD Config
+
+Phase 2.1.4.1 Build Macros
+Phase 2.1.4.1 Build Macros | Checksum: ed45b321
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1.4 Build Shapes/ HD Config | Checksum: ed45b321
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.5 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.5.1 Pre-Place Cells
+Phase 2.1.5.1 Pre-Place Cells | Checksum: 6e115225
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1005.066 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.5.2 IO & Clk Clean Up
+Phase 2.1.5.2 IO & Clk Clean Up | Checksum: 6e115225
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.5.3 Implementation Feasibility check On IDelay
+Phase 2.1.5.3 Implementation Feasibility check On IDelay | Checksum: 6e115225
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.5.4 Commit IO Placement
+Phase 2.1.5.4 Commit IO Placement | Checksum: e64b1093
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1657f718f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.6 Build Placer Netlist Model
+
+Phase 2.1.6.1 Place Init Design
+
+Phase 2.1.6.1.1 Init Lut Pin Assignment
+Phase 2.1.6.1.1 Init Lut Pin Assignment | Checksum: 25530610e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.6.1.2 Build Clock Data
+Phase 2.1.6.1.2 Build Clock Data | Checksum: 1916593fa
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.6.1.3 setBudgets in placeInitDesign
+Phase 2.1.6.1.3 setBudgets in placeInitDesign | Checksum: 2335aafc9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1.6.1 Place Init Design | Checksum: 228ef311e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1.6 Build Placer Netlist Model | Checksum: 228ef311e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 2.1.7 Constrain Clocks/Macros
+
+Phase 2.1.7.1 Constrain Global/Regional Clocks
+Phase 2.1.7.1 Constrain Global/Regional Clocks | Checksum: 228ef311e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1.7 Constrain Clocks/Macros | Checksum: 228ef311e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 228ef311e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 228ef311e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1c1636e4a
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1c1636e4a
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 16cadcb5f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1c3761a9c
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 4.4 Timing Path Optimizer
+Phase 4.4 Timing Path Optimizer | Checksum: 10ada2b5e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 4.5 Commit Small Macros & Core Logic
+
+Phase 4.5.1 setBudgets
+Phase 4.5.1 setBudgets | Checksum: 1cc8296c7
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 4.5 Commit Small Macros & Core Logic | Checksum: 1cf1862a7
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 4.6 Re-assign LUT pins
+Phase 4.6 Re-assign LUT pins | Checksum: 1cf1862a7
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 4 Detail Placement | Checksum: 1cf1862a7
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1d08563dd
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 5.2 Post Placement Optimization
+
+Phase 5.2.1 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.548. For the most accurate timing information please run report_timing.
+Phase 5.2.1 Post Placement Timing Optimization | Checksum: 12b48c4ce
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 5.2 Post Placement Optimization | Checksum: 12b48c4ce
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 5.3 Post Placement Cleanup
+Phase 5.3 Post Placement Cleanup | Checksum: 12b48c4ce
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 5.4 Placer Reporting
+
+Phase 5.4.1 Restore STA
+Phase 5.4.1 Restore STA | Checksum: 12b48c4ce
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 5.4 Placer Reporting | Checksum: 12b48c4ce
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+
+Phase 5.5 Final Placement Cleanup
+Phase 5.5 Final Placement Cleanup | Checksum: f4e5ed11
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: f4e5ed11
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Ending Placer Task | Checksum: b7b53bfd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:29 . Memory (MB): peak = 1005.066 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+34 Infos, 10 Warnings, 16 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1005.066 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1005.066 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 111a8a054
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:53 . Memory (MB): peak = 1115.211 ; gain = 110.145
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 111a8a054
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:54 . Memory (MB): peak = 1115.211 ; gain = 110.145
+ Number of Nodes with overlaps = 0
+
+Phase 2.2 Update Timing
+Phase 2.2 Update Timing | Checksum: 2abd89c2
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:59 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.193  | TNS=0      | WHS=-0.361 | THS=-170   |
+
+Phase 2 Router Initialization | Checksum: 2abd89c2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:01 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 110f8aeb9
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:02 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 481
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 63bb2fa4
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.221  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 4f6bdc20
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:05 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:06 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.221  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:06 . Memory (MB): peak = 1152.340 ; gain = 147.273
+Phase 4 Rip-up And Reroute | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:06 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:06 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.235  | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 5 Delay CleanUp | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:06 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:06 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:07 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.235  | TNS=0      | WHS=0.03   | THS=0      |
+
+Phase 7 Post Hold Fix | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:07 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.14254 %
+  Global Horizontal Routing Utilization  = 1.39621 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:07 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 5612c7fc
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:07 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 83b455c3
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:08 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.235  | TNS=0      | WHS=0.03   | THS=0      |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 83b455c3
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:08 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: 83b455c3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:08 . Memory (MB): peak = 1152.340 ; gain = 147.273
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:08 . Memory (MB): peak = 1152.340 ; gain = 147.273
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 10 Warnings, 16 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:11 . Memory (MB): peak = 1152.340 ; gain = 147.273
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1152.340 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.runs/impl_1/WP1_system_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 05 14:14:23 2015...

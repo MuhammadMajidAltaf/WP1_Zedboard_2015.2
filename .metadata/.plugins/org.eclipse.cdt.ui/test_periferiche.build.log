@@ -1,0 +1,6 @@
+12:15:12 **** Incremental Build of configuration Debug for project test_periferiche ****
+make all 
+make: Nothing to be done for `all'.
+
+12:15:13 Build Finished (took 492ms)
+

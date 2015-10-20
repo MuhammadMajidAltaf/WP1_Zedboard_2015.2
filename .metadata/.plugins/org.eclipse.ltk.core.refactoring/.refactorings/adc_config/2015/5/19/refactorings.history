@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;adc_config/src/testperiph.c&apos; to &apos;ADC_read.c&apos;" description="Rename resource &apos;testperiph.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/testperiph.c" name="ADC_read.c" stamp="1430926586168" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;adc_config/src/init_xspips_ADC.c&apos; to &apos;setup_ADC.c&apos;" description="Rename resource &apos;init_xspips_ADC.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/init_xspips_ADC.c" name="setup_ADC.c" stamp="1430926648661" updateReferences="true"/>
+</session>

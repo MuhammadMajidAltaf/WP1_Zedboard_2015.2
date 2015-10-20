@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1445354372">
+  <File Type="RDS-DCP" Name="WP1_system.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="WP1_system_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="WP1_system_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="WP1_system.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="WP1_system.vds"/>
+  <File Type="RDS-UTIL" Name="WP1_system_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="WP1_system_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="WP1_system_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/WP1_system.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_Interface_ADC_0_2/WP1_system_Interface_ADC_0_2.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_delay_input_0_1/WP1_system_delay_input_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/hdl/WP1_system_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_axi_bram_ctrl_0_1/WP1_system_axi_bram_ctrl_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_axi_bram_ctrl_1_0/WP1_system_axi_bram_ctrl_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_blk_mem_gen_0_2/WP1_system_blk_mem_gen_0_2.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_blk_mem_gen_1_0/WP1_system_blk_mem_gen_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_axi_periph_0/WP1_system_processing_system7_0_axi_periph_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_0_0/WP1_system_selectio_wiz_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_1_0/WP1_system_selectio_wiz_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_util_vector_logic_0_0/WP1_system_util_vector_logic_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_xlconstant_0_0/WP1_system_xlconstant_0_0.upgrade_log"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="WP1_system"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/roberto_pcb">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/WP1/roberto_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/roberto_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1424726366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/migrated_io_properties.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/WP1/roberto_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

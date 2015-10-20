@@ -1,0 +1,236 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 20 17:15:54 2015
+# Process ID: 3692
+# Log file: C:/Xilinx/Vivado/2015.2/progetti/WP1/vivado.log
+# Journal file: C:/Xilinx/Vivado/2015.2/progetti/WP1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Xilinx/Vivado/2015.2/ip_repo'; using path 'C:/Xilinx/Vivado/2014.2/progetti/ip_repo' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Xilinx/Vivado/2015.2/progetti/ip_repo'; using path 'C:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'WP1.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/2014.2/progetti/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'le.infn.it:user:ADC_interface:1.0'. The one found in IP location 'c:/Xilinx/Vivado/2014.2/progetti/ip_repo/ADC_interface' will take precedence over the same IP in locations: 
+   c:/Xilinx/Vivado/2014.2/progetti/ip_repo/ADC_interface_1
+   c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/ADC_interface
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'in2p3.fr:user:delay_input:1.0'. The one found in IP location 'c:/Xilinx/Vivado/2014.2/progetti/ip_repo/delay_input' will take precedence over the same IP in locations: 
+   c:/Xilinx/Vivado/2014.2/progetti/ip_repo/delay_input/delay_input
+   c:/Xilinx/Vivado/2014.2/progetti/ip_repo/delay_input_1
+   c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/delay_input
+   c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/delay_input/delay_input
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Lpsc.in2p3.fr:user:Interface_uub:1.01'. The one found in IP location 'c:/Xilinx/Vivado/2014.2/progetti/ip_repo/Interface_uub_1.0' will take precedence over the same IP in location c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/Interface_uub_1.0
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:In_regional_ck:1.0'. The one found in IP location 'c:/Xilinx/Vivado/2014.2/progetti/ip_repo/In_regional_ck' will take precedence over the same IP in location c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/In_regional_ck
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_ds_buf:1.0'. The one found in IP location 'c:/Xilinx/Vivado/2014.2/progetti/ip_repo/util_dis_buf_v1_0' will take precedence over the same IP in locations: 
+   c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/util_dis_buf_v1_0
+   c:/Xilinx/Vivado/2014.2/progetti/WP1/ip_repo/util_dis_buf_v1_0_1
+   c:/Xilinx/Vivado/2015.2/data/rsb/iprepos/util_ds_buf_v1_0
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'WP1_system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+WP1_system_selectio_wiz_1_0
+WP1_system_axi_gpio_0_0
+WP1_system_processing_system7_0_0
+WP1_system_rst_processing_system7_0_100M_0
+WP1_system_xbar_0
+WP1_system_selectio_wiz_0_0
+WP1_system_xlconstant_0_0
+WP1_system_blk_mem_gen_0_2
+WP1_system_util_vector_logic_0_0
+WP1_system_axi_bram_ctrl_1_0
+WP1_system_axi_bram_ctrl_0_1
+WP1_system_blk_mem_gen_1_0
+WP1_system_s00_data_fifo_0
+WP1_system_auto_pc_0
+WP1_system_auto_pc_1
+WP1_system_auto_pc_2
+
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 730.254 ; gain = 167.148
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {WP1_system_blk_mem_gen_0_2 WP1_system_axi_bram_ctrl_1_0 WP1_system_processing_system7_0_axi_periph_0 WP1_system_selectio_wiz_0_0 WP1_system_axi_gpio_0_0 WP1_system_selectio_wiz_1_0 WP1_system_axi_bram_ctrl_0_1 WP1_system_xlconstant_0_0 WP1_system_blk_mem_gen_1_0 WP1_system_util_vector_logic_0_0 WP1_system_rst_processing_system7_0_100M_0 WP1_system_processing_system7_0_0}]
+Upgrading 'C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/WP1_system.bd'
+Adding component instance block -- xilinx.com:ip:processing_system7:5.4 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- xilinx.com:ip:util_ds_buf:1.0 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:selectio_wiz:5.1 - selectio_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:selectio_wiz:5.1 - selectio_wiz_1
+Adding component instance block -- in2p3.fr:user:delay_input:1.0 - delay_input_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:util_vector_logic:1.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_1
+Adding component instance block -- le.infn.it:user:ADC_interface:1.0 - Interface_ADC_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <WP1_system> from BD file <C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/WP1_system.bd>
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_axi_bram_ctrl_0_1 (AXI BRAM Controller 4.0) from revision 1 to revision 4
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_bram_ctrl_0_1/WP1_system_axi_bram_ctrl_0_1.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_axi_bram_ctrl_1_0 (AXI BRAM Controller 4.0) from revision 1 to revision 4
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_bram_ctrl_1_0/WP1_system_axi_bram_ctrl_1_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_axi_gpio_0_0 (AXI GPIO 2.0) from revision 5 to revision 7
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_blk_mem_gen_0_2 (Block Memory Generator 8.2) from revision 1 to revision 6
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_blk_mem_gen_0_2/WP1_system_blk_mem_gen_0_2.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_blk_mem_gen_1_0 (Block Memory Generator 8.2) from revision 1 to revision 6
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_blk_mem_gen_1_0/WP1_system_blk_mem_gen_1_0.upgrade_log'.
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+WARNING: [IP_Flow 19-3501] Upgraded WP1_system_processing_system7_0_0 from ZYNQ7 Processing System 5.4 to ZYNQ7 Processing System 5.5, with warnings. Please review the upgrade log 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3670] Detected external interface differences while upgrading IP 'WP1_system_processing_system7_0_0'.
+CRITICAL WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading IP 'WP1_system_processing_system7_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.upgrade_log'.
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_processing_system7_0_axi_periph_0 (AXI Interconnect 2.1) from revision 3 to revision 6
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_axi_periph_0/WP1_system_processing_system7_0_axi_periph_0.upgrade_log'.
+INFO: [Ipptcl 7-578] No Compatible Board Interface found.Board Tab not created
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_rst_processing_system7_0_100M_0 (Processor System Reset 5.0) from revision 5 to revision 7
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0.upgrade_log'.
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+The HP banks in device are  && local var set to 0 && devicetype is 3
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_selectio_wiz_0_0 (SelectIO Interface Wizard 5.1) from revision 2 to revision 5
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_0_0/WP1_system_selectio_wiz_0_0.upgrade_log'.
+The HP banks in device are  && local var set to 0 && devicetype is 3
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_selectio_wiz_1_0 (SelectIO Interface Wizard 5.1) from revision 2 to revision 5
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_1_0/WP1_system_selectio_wiz_1_0.upgrade_log'.
+INFO: [IP_Flow 19-1972] Upgraded WP1_system_util_vector_logic_0_0 from Utility Vector Logic 1.0 to Utility Vector Logic 2.0
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_util_vector_logic_0_0/WP1_system_util_vector_logic_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded WP1_system_xlconstant_0_0 (Constant 1.1) from revision 0 to revision 1
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_xlconstant_0_0/WP1_system_xlconstant_0_0.upgrade_log'.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of IP instance 'WP1_system_axi_gpio_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0.upgrade_log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of IP instance 'WP1_system_processing_system7_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.upgrade_log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of IP instance 'WP1_system_selectio_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_0_0/WP1_system_selectio_wiz_0_0.upgrade_log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of IP instance 'WP1_system_selectio_wiz_1_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_1_0/WP1_system_selectio_wiz_1_0.upgrade_log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/WP1_system.bd> 
+upgrade_ip: Time (s): cpu = 00:01:28 ; elapsed = 00:01:15 . Memory (MB): peak = 1151.828 ; gain = 408.184
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+CRITICAL WARNING: [BD 41-1178] The design is using an old version of the following IPs. It is recommended that you upgrade these cells to their latest version: 
+/util_ds_buf_0
+
+CRITICAL WARNING: [PS7-6]  LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Twin_ADC_controller/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Twin_ADC_controller/blk_mem_gen_1/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(14) - Only lower order bits will be connected.
+VHDL Output written to : C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hdl/WP1_system.vhd
+VHDL Output written to : C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hdl/WP1_system_wrapper.vhd
+Wrote  : <C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/WP1_system.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_processing_system7_0_0'...
+CRITICAL WARNING: [xilinx.com:ip:processing_system7:5.5-1] WP1_system_processing_system7_0_0: Critical Warning:- LVCMOS33 (3.3V) is not supported for RGMII interface in Ethernet0. Recommendation is to use 1.8/2.5V IO.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_axi_gpio_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'WP1_system_axi_gpio_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_rst_processing_system7_0_100M_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'WP1_system_rst_processing_system7_0_100M_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_util_ds_buf_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_selectio_wiz_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block selectio_wiz_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_xlconstant_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_selectio_wiz_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block selectio_wiz_1 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_util_vector_logic_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/util_vector_logic_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_Interface_ADC_0_2'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/Interface_ADC_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_delay_input_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block delay_input_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_blk_mem_gen_0_2'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/blk_mem_gen_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_axi_bram_ctrl_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/axi_bram_ctrl_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_axi_bram_ctrl_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/axi_bram_ctrl_1 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_blk_mem_gen_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/blk_mem_gen_1 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_xbar_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'WP1_system_xbar_0' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_s00_data_fifo_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'WP1_system_s00_data_fifo_0' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/s00_data_fifo .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_auto_pc_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'WP1_system_auto_pc_0' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_auto_pc_1'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'WP1_system_auto_pc_1' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'WP1_system_auto_pc_2'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'WP1_system_auto_pc_2' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1379] This design does not contain any processor.
+Exporting to file C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hw_handoff/WP1_system.hwh
+Generated Block Design Tcl file C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hw_handoff/WP1_system_bd.tcl
+Generated Hardware Definition File C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hdl/WP1_system.hwdef
+INFO: [BD 41-1662] The design 'WP1_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Twin_ADC_controller/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Twin_ADC_controller/blk_mem_gen_1/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(14) - Only lower order bits will be connected.
+VHDL Output written to : C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hdl/WP1_system.vhd
+VHDL Output written to : C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hdl/WP1_system_wrapper.vhd
+Wrote  : <C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/WP1_system.bd> 
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_processing_system7_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_axi_gpio_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'WP1_system_axi_gpio_0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'WP1_system_axi_gpio_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'WP1_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'WP1_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_util_ds_buf_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_selectio_wiz_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block selectio_wiz_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_xlconstant_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_selectio_wiz_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block selectio_wiz_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_util_vector_logic_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/util_vector_logic_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_Interface_ADC_0_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/Interface_ADC_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_delay_input_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block delay_input_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_blk_mem_gen_0_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/blk_mem_gen_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_axi_bram_ctrl_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/axi_bram_ctrl_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_axi_bram_ctrl_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/axi_bram_ctrl_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_blk_mem_gen_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Twin_ADC_controller/blk_mem_gen_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_xbar_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_s00_data_fifo_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/s00_data_fifo .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_auto_pc_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_auto_pc_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'WP1_system_auto_pc_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1379] This design does not contain any processor.
+Exporting to file C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hw_handoff/WP1_system.hwh
+Generated Block Design Tcl file C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hw_handoff/WP1_system_bd.tcl
+Generated Hardware Definition File C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.srcs/sources_1/bd/WP1_system/hdl/WP1_system.hwdef
+[Tue Oct 20 17:19:33 2015] Launched synth_1...
+Run output will be captured here: C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.runs/synth_1/runme.log
+[Tue Oct 20 17:19:33 2015] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Vivado/2015.2/progetti/WP1/WP1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1186.191 ; gain = 24.305

@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed May 06 19:19:52 2015
+# Process ID: 7404
+# Log file: C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/webtalk/vivado.log
+# Journal file: C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/webtalk\vivado.jou
+#-----------------------------------------------------------
+source sdk.tcl
+# webtalk_init -webtalk_dir C:\\Xilinx\\Vivado\\2014.2\\progetti\\WP1\\WP1\\webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "mer mag 6 19:19:48 2015" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key product_version -value "SDK v2014.2" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key build_version -value "2014.2" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key tool_flow -value "SDK" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key beta -value "false" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key route_design -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_family -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "25ejba1aea1ijt73845hkto6ja" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2014.2_5" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "5" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_name -value "Microsoft Windows 7 , 64-bit" -context "user_environment"
+# webtalk_add_data -client project -key os_release -value "Service Pack 1  (build 7601)" -context "user_environment"
+# webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i3-3120M CPU @ 2.50GHz" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "2494 MHz" -context "user_environment"
+# webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
+# webtalk_add_data -client project -key system_ram -value "3.000 GB" -context "user_environment"
+# webtalk_register_client -client sdk
+# webtalk_add_data -client sdk -key uid -value "1430932516304" -context "sdk\\\\application/1430932516304"
+# webtalk_add_data -client sdk -key hwid -value "1424882184262" -context "sdk\\\\application/1430932516304"
+# webtalk_add_data -client sdk -key bspid -value "1426151176017" -context "sdk\\\\application/1430932516304"
+# webtalk_add_data -client sdk -key newbsp -value "false" -context "sdk\\\\application/1430932516304"
+# webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\application/1430932516304"
+# webtalk_add_data -client sdk -key apptemplate -value "hello_world" -context "sdk\\\\application/1430932516304"
+# webtalk_transmit -clientid 3299904967 -regid "" -xml C:\\Xilinx\\Vivado\\2014.2\\progetti\\WP1\\WP1\\webtalk\\usage_statistics_ext_sdk.xml -html C:\\Xilinx\\Vivado\\2014.2\\progetti\\WP1\\WP1\\webtalk\\usage_statistics_ext_sdk.html -wdm C:\\Xilinx\\Vivado\\2014.2\\progetti\\WP1\\WP1\\webtalk\\sdk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+INFO: [Common 17-185] WebTalk report has not been sent to Xilinx. Please check your network and proxy settings.
+
+    while executing
+"webtalk_transmit -clientid 3299904967 -regid "" -xml C:\\Xilinx\\Vivado\\2014.2\\progetti\\WP1\\WP1\\webtalk\\usage_statistics_ext_sdk.xml -html C:\\X..."
+    (file "sdk.tcl" line 31)
+INFO: [Common 17-206] Exiting Vivado at Wed May 06 19:19:59 2015...

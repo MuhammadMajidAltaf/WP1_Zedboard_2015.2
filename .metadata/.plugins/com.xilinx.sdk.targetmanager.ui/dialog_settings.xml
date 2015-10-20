@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="WP1_system_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="WP1_system_hw_platform_1-target"/>
+	<item value="WP1_system.bit" key="WP1_system_hw_platform_1-bitFile"/>
+	<item value="true" key="WP1_system_hw_platform_1-runResetZynq"/>
+	<item value="" key="WP1_system_hw_platform_0-bmmFile"/>
+	<item value="WP1_system.bit" key="WP1_system_hw_platform_0-bitFile"/>
+	<item value="WP1_system_bd.bmm" key="WP1_system_hw_platform_1-bmmFile"/>
+	<item value="Local" key="WP1_system_hw_platform_0-target"/>
+	<item value="true" key="WP1_system_hw_platform_0-runResetZynq"/>
+</section>

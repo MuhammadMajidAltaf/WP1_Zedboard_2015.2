@@ -1,0 +1,49 @@
+19:11:44 **** Build of configuration Debug for project uart ****
+make all 
+'Building file: ../src/init_xspips_ADC.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/init_xspips_ADC.d" -MT"src/init_xspips_ADC.d" -o "src/init_xspips_ADC.o" "../src/init_xspips_ADC.c"
+'Finished building: ../src/init_xspips_ADC.c'
+' '
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:22:4: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+    Xil_ICacheEnable();
+    ^
+../src/testperiph.c:23:4: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+    Xil_DCacheEnable();
+    ^
+../src/testperiph.c:30:6: warning: implicit declaration of function 'SpiPs_Init_SPI' [-Wimplicit-function-declaration]
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+      ^
+../src/testperiph.c:30:30: error: 'XPAR_PS7_SPI_1_DEVICE_ID' undeclared (first use in this function)
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+                              ^
+../src/testperiph.c:30:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/testperiph.c:37:5: warning: assignment makes pointer from integer without a cast [enabled by default]
+ led = 0x41200000;
+     ^
+../src/testperiph.c:58:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer1 = 0x40000000;
+         ^
+../src/testperiph.c:59:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer2 = 0x40010000;
+         ^
+../src/testperiph.c:168:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/testperiph.c:169:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+../src/testperiph.c:21:19: warning: unused variable 'ps7_uart_0' [-Wunused-variable]
+    static XUartPs ps7_uart_0;
+                   ^
+../src/testperiph.c:20:19: warning: unused variable 'intc' [-Wunused-variable]
+    static XScuGic intc;
+                   ^
+make: *** [src/testperiph.o] Error 1
+
+19:11:46 Build Finished (took 2s.592ms)
+

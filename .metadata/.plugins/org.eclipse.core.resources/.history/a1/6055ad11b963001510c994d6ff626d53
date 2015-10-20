@@ -1,0 +1,280 @@
+// Acquisizione dati da modulo con doppio AD9628
+
+#include <stdio.h>
+#include "xiicps.h"
+#include "xparameters.h"
+#include "xscugic.h"
+#include "xdevcfg.h"
+#include "xdmaps.h"
+#include "dmaps_header.h"
+#include "xqspips.h"
+#include "qspips_header.h"
+#include "xspips.h"
+#include "spips_header.h"
+#include "xuartps.h"
+#include "uartps_header.h"
+#include "sleep.h"
+#include "xil_printf.h"
+
+#include "xstatus.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+
+#include "xuartps_hw.h"
+
+#define TEST_BUFFER_SIZE	16
+#define CHAR_ESC		0x1b	/* 'ESC' character is used as terminator */
+#define IIC_DEVICE_ID		XPAR_XIICPS_0_DEVICE_ID
+#define UART_BASEADDR		XPAR_XUARTPS_0_BASEADDR
+#define UART_CLOCK_HZ		XPAR_XUARTPS_0_CLOCK_HZ
+u8 RecvBuffer[TEST_BUFFER_SIZE];
+u8 RecvChar;
+u32 CntrlRegister;
+u32 Running;
+
+int send_byte_to_uart(u16 DeviceId, u16 data);
+int ii=0;
+XUartPs Uart_Ps;		/* The instance of the UART Driver */
+
+
+   int main()
+   {
+      static XScuGic intc;
+      static XUartPs ps7_uart_0;
+      Xil_ICacheEnable();
+      Xil_DCacheEnable();
+
+    int Status,Index,i;
+    u8 trigger;
+
+	#define UART_DEVICE_ID                  XPAR_XUARTPS_0_DEVICE_ID	//definisci UART
+
+    CntrlRegister = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_CR_OFFSET);
+
+    	/*
+    	 * Enable TX and RX for the device
+    	 */
+    	XUartPs_WriteReg(UART_BASEADDR, XUARTPS_CR_OFFSET,
+    			  ((CntrlRegister & ~XUARTPS_CR_EN_DIS_MASK) |
+    			   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+
+    // Configurazione UART
+    	XUartPs_Config *Config;
+        Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+        XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+        XUartPs_SetBaudRate(&Uart_Ps, 115200);
+
+// INIZIALIZZAZIONE AD9628
+//     	print("Inizializzazione AD 9628 : ");
+    	XUartPs_Send(&Uart_Ps, "INIZIALIZZAZIONE...\r\n", 23);
+
+    	Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);	// funzione di setup_ADC
+     	if (Status == 0) {XUartPs_Send(&Uart_Ps, "OK da inizializzazione...\r\n", 33); }  else { XUartPs_Send(&Uart_Ps, "ATTENZIONE PROBLEMA INIZIALIZZAZIONE SPI...\r\n", 43); }
+
+
+/*
+Running = TRUE;
+while (Running) {
+    	while (!XUartPs_IsReceiveData(UART_BASEADDR));
+
+    			RecvChar = XUartPs_ReadReg(UART_BASEADDR,
+    						    XUARTPS_FIFO_OFFSET);
+
+
+    			if (('a' <= RecvChar) && ('z' >= RecvChar)) {
+
+    				RecvChar = RecvChar - 'a' + 'A';
+    			}
+    			else if (('A' <= RecvChar) && ('Z' >= RecvChar)) {
+    				// Convert the small letter to a Capital.
+    				RecvChar = RecvChar - 'A' + 'a';
+    			}
+    			else if (CHAR_ESC == RecvChar) {
+    				return;
+    			}
+
+
+    			XUartPs_WriteReg(UART_BASEADDR,  XUARTPS_FIFO_OFFSET,
+    					  RecvChar);
+}
+
+
+    while(1){
+    	XUartPs_Recv(&Uart_Ps, RecvBuffer, 2);
+//    	printf(RecvBuffer);
+
+//    	XUartPs_Send(&Uart_Ps, "X", 1);
+		if (RecvBuffer[0]=="G"||RecvBuffer[0]=="O")
+		{
+			XUartPs_Send(&Uart_Ps, "TRIGGER...\r\n", 10);
+			break;
+		}
+
+}
+//accendi led*/
+unsigned int *led;
+led = 0x41200000;
+*led = 0xFFFFFFFF;
+
+
+// Lettura BRAM canali ADC0 e ADC1
+unsigned int *buffer1, *buffer2;
+buffer2 = 0x40000000;
+buffer1 = 0x40010000;
+int w,ADC0A,ADC0B,ADC1A,ADC1B;
+//printf( "-----   READ BRAM ADC0 and ADC1   -----\r\n\r");
+//printf( "addr |         ADC0        ||       ADC1        |\r\n");
+//printf( "      ADC0       ||       ADC1        |\r\n");
+
+//XUartPs_Send(&Uart_Ps, "UUB", 3);// invio header trasmissione seriale
+print("UUB");// invio header trasmissione seriale
+
+for ( w = 0; w < 513; w++) //numero dilocazioni BRAM da inviare su seriale.
+       {
+       ADC0A = *buffer1;
+       ADC0B = *buffer1&0xfff;
+       ADC1A = *buffer2;
+       ADC1B = *buffer2&0xfff;
+//       printf( "  %X =  CH0=%X | CH1=%X  || CH0=%X | CH1=%X  ||\r\n",w, ADC0A>>16, ADC0B, ADC1A>>16, ADC1B);
+//       printf( "CH0=%X | CH1=%X  || CH0=%X | CH1=%X  ||\r\n",ADC0A>>16, ADC0B, ADC1A>>16, ADC1B);
+       printf("%X%X\n", w,w);
+//       printf( "%X%X",(ADC0A>>16)&0xfff, ADC0B);
+
+
+
+//       XUartPs_Send(&Uart_Ps, "X", 1);
+//       XUartPs_Send(&Uart_Ps, ADC0A, 4);
+//       send_byte_to_uart(UART_DEVICE_ID, ADC0A>>16); // Invio dati ADC0 canale 1
+//       usleep(800);
+//       send_byte_to_uart(UART_DEVICE_ID, ADC0B); // Invio dati ADC0 canale 2
+       buffer1 = buffer1 + 1;
+       buffer2 = buffer2 + 1;
+       }
+XUartPs_Send(&Uart_Ps, "Fine invio dati...\r\n", 15);
+//##########################################################################################################
+// test dei registri
+//scrittura
+/*     unsigned int *brama;
+          brama = 0x40010000;
+          int z;
+
+printf( "Scrivo BRam su porta A ind. %X\r\n",brama);
+     for ( z = 0; z < 4097; z++)
+          {
+            *brama = 0x0AAA0CCC;
+         //   *brama = z;
+         	 brama = brama + 1;
+         }
+
+
+// Lettura continua canali ADC0 e ADC1
+unsigned int *buffer1, *buffer2;
+buffer1 = 0x40000000;
+buffer2 = 0x40010000;
+int ADC0A,ADC0B,ADC1A,ADC1B;
+
+		while(1)
+		{
+       ADC0A = *buffer1;
+       ADC0B = *buffer1&0x1fff;
+       ADC1A = *buffer2;
+       ADC1B = *buffer2&0x1fff;
+
+       printf( "CH0=%X | CH1=%X  || CH0=%X | CH1=%X  ||\r\n",ADC0A>>16, ADC0B, ADC1A>>16, ADC1B);
+
+
+//send_byte_to_uart(UART_DEVICE_ID, ADC0A);
+
+
+		}
+
+
+//lettura BRAM ADC0 ################################################################################
+unsigned int *bramb;
+          bramb = 0x40000000;
+          int w,chanA,chanB;;
+printf( "       ----- READ BRAM ADC0 -----\r\n\r\n");
+//printf( "     addr -- CHA-CHB\r\n");
+     for ( w = 0; w < 15; w++)
+               {
+    	 	 	 chanA = *bramb;
+    	         chanB = *bramb&0x1fff;
+    	         printf( "  %X = chanA %X chanB %X\r\n",bramb, chanA>>16, chanB);
+              	 bramb = bramb + 1;
+               }
+
+     //lettura BRAM ADC1
+     unsigned int *bramc;
+               bramc = 0x40010000;
+               int v;
+     printf( "\r\n       ----- READ BRAM ADC1 -----\r\n\r\n");
+          for ( v = 0; v < 15; v++)
+                    {
+        	         chanA = *bramc;
+        	         chanB = *bramc&0x1fff;
+                      printf( "  %X = chanA %X chanB %X\r\n",bramc, chanA>>16, chanB);
+        	  bramc = bramc + 1;
+                    }
+
+
+unsigned int *registre_adc;
+     registre_adc = 0x43c00000;
+     int i;
+
+     printf("\r\n Visualizzazione registri interni interfaccia ADC : \r\n");
+     for ( i = 0; i < 16; i++)
+     {
+         printf( "  %X = %X \r\n",registre_adc, *registre_adc);
+    	 registre_adc = registre_adc + 1;
+     }
+//##########################################################################################################
+
+     printf( "Output ADC Channels\r\n ");
+     unsigned int *registre_adc0;
+          registre_adc0 = 0x43c00000;
+
+         volatile unsigned int a;
+
+
+     unsigned int *registre_adc1;
+          registre_adc1 = 0x43c00004;
+          volatile unsigned int b;
+
+
+     while(1)
+     {
+    	 a = *registre_adc0;
+    	 b = *registre_adc1;
+
+//    	 printf( "%X",a);
+    	 printf( "ADC0 = Channel A = %X,  Channel B = %X \r\n",a >>16,a & 0xffff);
+//    	 printf( "%X",b);
+    	 printf( "ADC1 = Channel A = %X,  Channel B = %X \r\n\r\n",b >>16,b & 0xffff);
+
+    	 for( i = 0; i<50000000;i++)
+    	 {
+    		 registre_adc = 0x43C00000;
+    	 }
+     }
+
+*/
+     *led = 0x00000000;
+//   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}
+/////////////////////////////////////////////////////
+// Invio byte su porta seriale specificata
+int send_byte_to_uart(u16 DeviceId, u16 data)
+{
+
+
+        	XUartPs_Send(&Uart_Ps, &data, 2);
+ //       	printf("stampa trasmissione buffer %d - val hex = %x\n",ii++,data);
+
+
+}
+
+
+

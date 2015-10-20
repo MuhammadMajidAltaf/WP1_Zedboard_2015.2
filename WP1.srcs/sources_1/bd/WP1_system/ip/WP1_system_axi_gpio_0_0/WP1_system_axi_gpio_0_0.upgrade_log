@@ -1,0 +1,55 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Oct 20 17:17:09 2015
+| Host         : Assiro-cad running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'WP1_system_axi_gpio_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of WP1_system_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+WARNING: An attempt to modify the value of disabled parameter 'C_ALL_INPUTS_2' from '0' to '1' has been ignored for IP '/axi_gpio_0'
+
+WARNING: An attempt to modify the value of disabled parameter 'C_GPIO2_WIDTH' from '32' to '8' has been ignored for IP '/axi_gpio_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_gpio:2.0 -user_name WP1_system_axi_gpio_0_0
+set_property -dict "\
+  CONFIG.GPIO_BOARD_INTERFACE leds_8bits \
+  CONFIG.GPIO2_BOARD_INTERFACE Custom \
+  CONFIG.C_DOUT_DEFAULT_2 0x00000000 \
+  CONFIG.USE_BOARD_FLOW true \
+  CONFIG.C_TRI_DEFAULT 0xFFFFFFFF \
+  CONFIG.C_ALL_OUTPUTS 1 \
+  CONFIG.C_IS_DUAL 0 \
+  CONFIG.C_ALL_INPUTS 0 \
+  CONFIG.C_TRI_DEFAULT_2 0xFFFFFFFF \
+  CONFIG.C_GPIO2_WIDTH 8 \
+  CONFIG.Component_Name WP1_system_axi_gpio_0_0 \
+  CONFIG.C_ALL_INPUTS_2 1 \
+  CONFIG.C_ALL_OUTPUTS_2 0 \
+  CONFIG.C_INTERRUPT_PRESENT 0 \
+  CONFIG.C_GPIO_WIDTH 8 \
+  CONFIG.C_DOUT_DEFAULT 0x00000000 " [get_ips WP1_system_axi_gpio_0_0]
+
+

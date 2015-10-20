@@ -1,0 +1,6 @@
+10:22:57 **** Incremental Build of configuration Debug for project test_uart_2 ****
+make all 
+make: Nothing to be done for `all'.
+
+10:22:57 Build Finished (took 189ms)
+

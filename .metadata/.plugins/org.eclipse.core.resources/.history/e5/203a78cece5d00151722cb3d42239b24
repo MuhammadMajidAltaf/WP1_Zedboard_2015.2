@@ -1,0 +1,206 @@
+/**
+*  LED CONTROLLER for Auger Experiment
+*  written from Roberto Assiro May 2015
+*  DAC AD5316 on address 0C
+* Imposto DAC AD5316 per tensione led e genero impulso su JE9
+/***************************** Include Files **********************************/
+
+#include "xparameters.h"
+#include "xiicps.h"
+#include "xil_printf.h"
+#include <stdio.h>
+#include "xgpiops.h"
+#include "pulse.h"
+
+#define IIC_DEVICE_ID		XPAR_XIICPS_0_DEVICE_ID
+
+#define IIC_SLAVE_ADDR		0x0C // DAC address
+#define IIC_SCLK_RATE		100000
+#define BUFFER_SIZE	132
+
+/************************** Function Prototypes *******************************/
+int IicPsMasterPolledExample(u16 DeviceId);
+/************************** Variable Definitions ******************************/
+
+XIicPs Iic;		/**< Instance of the IIC Device */
+
+u8 SendBuffer[BUFFER_SIZE];    /**< Buffer for Transmitting Data */
+u8 RecvBuffer[BUFFER_SIZE];    /**< Buffer for Receiving Data */
+u8 pointer_byte;
+
+/*
+int main()
+{
+	int Status;
+	xil_printf("IIC Zynq chiama DAC \r\n");
+
+	Status = IicPsMasterPolledExample(IIC_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("IIC Master non riceve risposta dal DAC\r\n");
+		return XST_FAILURE;
+	}
+	xil_printf("Risposta ricevuta dal DAC OK funziona\r\n");
+	return XST_SUCCESS;
+}
+*/
+
+int IicPsMasterPolledExample(u16 DeviceId)
+{
+	int Status;
+	XIicPs_Config *Config;
+	int Index;
+
+	/*
+	 * Initialize the IIC driver so that it's ready to use
+	 * Look up the configuration in the config table,
+	 * then initialize it.
+	 */
+	Config = XIicPs_LookupConfig(DeviceId);
+	if (NULL == Config) {
+		return XST_FAILURE;
+	}
+
+	Status = XIicPs_CfgInitialize(&Iic, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Perform a self-test to ensure that the hardware was built correctly.
+	 */
+	Status = XIicPs_SelfTest(&Iic);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XIicPs_SetSClk(&Iic, IIC_SCLK_RATE);  //Set the IIC serial clock rate
+
+
+	pointer_byte = 0x01;
+
+	SendBuffer[0] = 0x0F;
+	SendBuffer[1] = 0xF1;		// 11110000
+	SendBuffer[2] = 0x7C;		// 01111100
+
+	SendBuffer[3] = 0x7C;
+
+	SendBuffer[4] = 0xF0;		// 11110000
+	SendBuffer[5] = 0x7C;		// 01111100
+
+	SendBuffer[6] = 0xF0;		// 11110000
+	SendBuffer[7] = 0x7C;		// 01111100
+
+
+	XIicPs_MasterSendPolled(&Iic, SendBuffer, 3, IIC_SLAVE_ADDR);
+
+
+
+/*
+	//ritardo
+	unsigned int *led;
+	int i;
+	led = 0x41200000;
+	*led = 0xFFFFFFFF;
+	 for( i = 0; i<5000;i++)
+	 {
+	 }
+*led = 0x00000000;
+*/
+
+
+
+// leggo e visualizzo dati
+//	 XIicPs_MasterRecvPolled(&Iic, RecvBuffer, 1, IIC_SLAVE_ADDR);
+//	 xil_printf("dato %X \r\n",RecvBuffer[0]);
+
+	 XIicPs_MasterSendPolled(&Iic, 0x0F, 1, IIC_SLAVE_ADDR);
+
+	 XIicPs_MasterRecvPolled(&Iic, RecvBuffer, 2, IIC_SLAVE_ADDR);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[0]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[1]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[2]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[3]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[4]);
+/*	 	 xil_printf("dato %X \r\n",RecvBuffer[5]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[6]);
+	 	 xil_printf("dato %X \r\n",RecvBuffer[7]);
+
+
+
+	Status = XIicPs_MasterRecvPolled(&Iic, RecvBuffer, 3, IIC_SLAVE_ADDR);
+		if (Status != XST_SUCCESS) {
+				return XST_FAILURE;
+		}
+
+
+		for (Index = 0; Index < BUFFER_SIZE; Index++) {
+				xil_printf("dato %X \r\n",RecvBuffer[Index]);
+			}
+
+
+
+
+	 	int Status;
+	 		u32 InputData;
+
+	 		printf("impulso su pin 9 - JE8 \r\n");
+	 		GpioPolledExample(GPIO_DEVICE_ID, &InputData);
+
+
+*/
+
+
+	/*
+	 * Initialize the send buffer bytes with a pattern to send and the
+	 * the receive buffer bytes to zero to allow the receive data to be
+	 * verified.
+
+	for (Index = 0; Index < BUFFER_SIZE; Index++) {
+		SendBuffer[Index] = (Index % BUFFER_SIZE);
+		RecvBuffer[Index] = 0;
+	}
+ */
+	/*
+	 * Send the buffer using the IIC and ignore the number of bytes sent
+	 * as the return value since we are using it in interrupt mode.
+
+	Status = XIicPs_MasterSendPolled(&Iic, SendBuffer,
+			 BUFFER_SIZE, IIC_SLAVE_ADDR);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+*/
+
+
+	/*
+	 * Wait until bus is idle to start another transfer.
+
+	while (XIicPs_BusIsBusy(&Iic)) {
+
+	}
+
+	Status = XIicPs_MasterRecvPolled(&Iic, RecvBuffer,
+			  BUFFER_SIZE, IIC_SLAVE_ADDR);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+ */
+
+
+
+	/*
+	 * Verify received data is correct.
+
+	 for(Index = 0; Index < BUFFER_SIZE; Index ++) {
+		if (RecvBuffer[Index] != Index % 64) {
+			return XST_FAILURE;
+		}
+	}
+*/
+
+
+//	 	printf("impulso su pin 9 - JE8 \r\n");
+	 	GpioPolledExample(GPIO_DEVICE_ID, &InputData);
+	return XST_SUCCESS;
+}

@@ -1,0 +1,207 @@
+
+/*****************************************************************************/
+/**
+* @file xspi_init_ADC.c
+**
+* @note
+*
+* None.
+*
+* MODIFICATION HISTORY:
+*
+* Ver   Who  Date     Changes
+* ----- ---- -------- -----------------------------------------------
+*
+******************************************************************************/
+
+/***************************** Include Files *********************************/
+
+#include "xparameters.h"  /* EDK generated parameters */
+#include "xspips.h"       /* SPI device driver */
+#include "xil_printf.h"
+
+/************************** Constant Definitions *****************************/
+
+// The following constant defines the slave select signal that is used to select
+// chip select of the device
+ 
+//#define SPI_SELECT 0x00
+
+/**************************** Type Definitions *******************************/
+
+/***************** Macros (Inline Functions) Definitions *********************/
+
+XSpiPs Spi;
+
+#define SPI_SELECT_ADC0 0x02
+#define SPI_SELECT_ADC1 0x05
+#define read_buffer_size 10                 // size of the SPI read buffer
+#define write_buffer_size 10                // size of the SPI write buffer
+u8 ReadBuffer[read_buffer_size]   = {0x00}; // SPI read buffer initialize to 0
+u8 WriteBuffer[write_buffer_size] = {0x00}; // SPI write buffer initialize to 0
+
+/*****************************************************************************
+*
+* The purpose of this function is to illustrate how to use the XSpiPs
+* device driver in polled mode. This test writes and reads data from a
+* serial EEPROM. The serial EEPROM part must be present in the hardware
+* to use this example.
+*
+* @param  SpiInstancePtr is a pointer to the Spi Instance.
+* @param  SpiDeviceId is the Device Id of Spi.
+*
+* @return XST_SUCCESS if successful else XST_FAILURE.
+*
+* @note
+*
+* This function calls functions which contain loops that may be infinite
+* if interrupts are not working such that it may not return. If the device
+* slave select is not correct and the device is not responding on bus it will
+* read a status of 0xFF for the status register as the bus is pulled up.
+*
+*****************************************************************************/
+int SpiPs_Init_SPI(u16 SpiDeviceId)
+{
+  int Status;
+  XSpiPs_Config *SpiConfig;
+
+  /* Initialize the SPI driver so that it's ready to use */
+  SpiConfig = XSpiPs_LookupConfig(SpiDeviceId);
+  if (NULL == SpiConfig) { return XST_FAILURE; }
+
+  Status = XSpiPs_CfgInitialize(&Spi, SpiConfig, SpiConfig->BaseAddress);
+  if (Status != XST_SUCCESS) { return XST_FAILURE; }
+
+  // Perform a self-test to check hardware build
+  Status = XSpiPs_SelfTest(&Spi);
+  if (Status != XST_SUCCESS) { return XST_FAILURE; }
+
+// Set the SCLK frequency to SPI_REF_CLK / XSPIPS_CLK_PRESCALE_xx
+
+  XSpiPs_SetClkPrescaler(&Spi, XSPIPS_CLK_PRESCALE_32);
+
+// Set the Spi device as a master ( is slave by default).
+  XSpiPs_SetOptions(&Spi, XSPIPS_MASTER_OPTION |
+		                  XSPIPS_FORCE_SSELECT_OPTION |
+		                  XSPIPS_DECODE_SSELECT_OPTION);
+
+
+// ID request to adc0
+    WriteBuffer[0] = 0x80;
+    WriteBuffer[1] = 0x01;
+    WriteBuffer[2] = 0x00;
+    XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);
+    XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+  if (ReadBuffer[2] == 0x89) { print("\r\nOK ADC0 presente"); }  else { print("\r\nATTENZIONE! ADC0 non risponde"); }
+       print("\r\n");
+
+       // ID request to adc1
+           WriteBuffer[0] = 0x80;
+           WriteBuffer[1] = 0x01;
+           WriteBuffer[2] = 0x00;
+           XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);
+           XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+         if (ReadBuffer[2] == 0x89) { print("OK ADC1 presente"); }  else { print("ATTENZIONE! ADC1 non risponde"); }
+              print("\r\n");
+
+//************************************************
+// Initialize The ADC0 component
+//************************************************
+// Write config data into ADC0 Chip
+   WriteBuffer[0] = 0x00;                            // writing cycle
+  WriteBuffer[1] = 0x14;                            // address register
+  WriteBuffer[2] = 0xA1;                            // data to write
+  XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);     // Assert the chip select
+  XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+
+// settaggio primo test pattern - bit LSB ad adc1
+     WriteBuffer[0] = 0x00;
+     WriteBuffer[1] = 0x19;
+     WriteBuffer[2] = 0xFF;		// out definito
+//     WriteBuffer[2] = 0x5F; // rampa
+     XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);
+     XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+// settaggio primo test pattern - bit MSB ad adc1
+          WriteBuffer[0] = 0x00;
+          WriteBuffer[1] = 0x1A;
+          WriteBuffer[2] = 0xFF;		// out definito
+          XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);
+          XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+// settaggio secondo test pattern - bit LSB ad adc1
+               WriteBuffer[0] = 0x00;
+               WriteBuffer[1] = 0x1B;
+               WriteBuffer[2] = 0xFF;		// out definito
+               XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);
+               XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+               // settaggio secondo test pattern - bit MSB ad adc1
+                    WriteBuffer[0] = 0x00;
+                    WriteBuffer[1] = 0x1C;
+                    WriteBuffer[2] = 0xFF;		// out definito
+                    //     WriteBuffer[2] = 0x5F; // rampa
+                    XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);
+                    XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+          // settaggio test ad adc1
+          WriteBuffer[0] = 0x00;
+          WriteBuffer[1] = 0x0D;
+          WriteBuffer[2] = 0x48;		// alternate continuous/repeat
+          XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC0);
+          XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+/*
+/*
+*/
+//************************************************
+// Initialize The ADC1 component
+//************************************************
+// Write config data into ADC1 Chip
+  WriteBuffer[0] = 0x00;
+  WriteBuffer[1] = 0x14;
+  WriteBuffer[2] = 0xA1;
+  XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);     // Assert the chip select
+  XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+// settaggio primo test pattern - bit LSB ad adc1
+     WriteBuffer[0] = 0x00;
+     WriteBuffer[1] = 0x19;
+     WriteBuffer[2] = 0x02;		// out definito
+//     WriteBuffer[2] = 0x5F; // rampa
+     XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);
+     XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+// settaggio primo test pattern - bit MSB ad adc1
+          WriteBuffer[0] = 0x00;
+          WriteBuffer[1] = 0x1A;
+          WriteBuffer[2] = 0x00;		// out definito
+          XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);
+          XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+// settaggio secondo test pattern - bit LSB ad adc1
+               WriteBuffer[0] = 0x00;
+               WriteBuffer[1] = 0x1B;
+               WriteBuffer[2] = 0x02;		// out definito
+               XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);
+               XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+               // settaggio secondo test pattern - bit MSB ad adc1
+                    WriteBuffer[0] = 0x00;
+                    WriteBuffer[1] = 0x1C;
+                    WriteBuffer[2] = 0x00;		// out definito
+                    //     WriteBuffer[2] = 0x5F; // rampa
+                    XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);
+                    XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+          // settaggio test ad adc1
+          WriteBuffer[0] = 0x00;
+          WriteBuffer[1] = 0x0D;
+          WriteBuffer[2] = 0x48;		// alternate continuous/repeat
+          XSpiPs_SetSlaveSelect(&Spi, SPI_SELECT_ADC1);
+          XSpiPs_PolledTransfer(&Spi, WriteBuffer, ReadBuffer, 3);
+
+
+  return XST_SUCCESS;
+}
+

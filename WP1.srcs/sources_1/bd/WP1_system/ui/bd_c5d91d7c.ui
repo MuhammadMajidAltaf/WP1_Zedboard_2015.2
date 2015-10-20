@@ -1,0 +1,42 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port S00_AXI -pg 1 -y 590 -defaultsOSRD
+preplace port S_AXI -pg 1 -y 160 -defaultsOSRD
+preplace port TRIG_OUT -pg 1 -y 720 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -y 420 -defaultsOSRD
+preplace portBus s00_axi_aresetn -pg 1 -y 750 -defaultsOSRD
+preplace portBus Op1 -pg 1 -y 440 -defaultsOSRD
+preplace portBus sw_service -pg 1 -y 690 -defaultsOSRD
+preplace portBus adc0 -pg 1 -y 650 -defaultsOSRD
+preplace portBus adc1 -pg 1 -y 670 -defaultsOSRD
+preplace portBus TRIG_IN -pg 1 -y 710 -defaultsOSRD
+preplace portBus s_axi_aresetn -pg 1 -y 200 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -y 540 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 2 -y 370 -defaultsOSRD
+preplace inst Interface_ADC_0 -pg 1 -lvl 2 -y 670 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 1 -y 440 -defaultsOSRD
+preplace netloc SW_SERVICE_1 1 0 2 NJ 690 NJ
+preplace netloc Interface_ADC_0_enable 1 1 2 480 500 780
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 0 1 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 N
+preplace netloc Interface_ADC_0_ADDR_mem 1 1 2 470 240 800
+preplace netloc Interface_ADC_0_wea 1 1 2 490 540 770
+preplace netloc util_vector_logic_0_Res 1 1 1 450
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 0 1 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 2 200 250 460
+preplace netloc selectio_wiz_0_data_in_to_device 1 0 2 NJ 670 NJ
+preplace netloc Interface_ADC_0_ADC0_mem 1 1 2 500 230 790
+preplace netloc Interface_ADC_0_TRIG_OUT 1 2 1 N
+preplace netloc TRIG_IN_1 1 0 2 NJ 710 NJ
+preplace netloc selectio_wiz_1_data_in_to_device 1 0 2 NJ 650 NJ
+preplace netloc util_vector_logic_1_Res 1 0 2 NJ 750 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 210 610 470
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 1 1 N
+preplace netloc Interface_ADC_0_ADC1_mem 1 1 2 500 250 760
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 0 2 NJ 590 NJ
+levelinfo -pg 1 180 330 630 820
+",
+}

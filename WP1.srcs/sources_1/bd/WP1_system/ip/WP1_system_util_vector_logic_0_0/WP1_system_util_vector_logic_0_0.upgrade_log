@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Oct 20 17:18:03 2015
+| Host         : Assiro-cad running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'WP1_system_util_vector_logic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of WP1_system_util_vector_logic_0_0 from xilinx.com:ip:util_vector_logic:1.0 (Rev. 2) to xilinx.com:ip:util_vector_logic:2.0
+

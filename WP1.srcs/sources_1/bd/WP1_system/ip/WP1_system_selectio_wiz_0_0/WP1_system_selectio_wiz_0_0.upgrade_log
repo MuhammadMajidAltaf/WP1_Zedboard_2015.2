@@ -1,0 +1,83 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Oct 20 17:18:02 2015
+| Host         : Assiro-cad running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'WP1_system_selectio_wiz_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of WP1_system_selectio_wiz_0_0 (xilinx.com:ip:selectio_wiz:5.1) from (Rev. 2) to (Rev. 5)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+WARNING: An attempt to modify the value of disabled parameter 'SELIO_BUS_IN_TAP' from '0' to '16' has been ignored for IP '/selectio_wiz_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:selectio_wiz:5.1 -user_name WP1_system_selectio_wiz_0_0
+set_property -dict "\
+  CONFIG.CLK_SIG_TYPE SINGLE \
+  CONFIG.CLK_BUF BUFIO2 \
+  CONFIG.DDR_CLK_BUF BUFR \
+  CONFIG.BUS_TAP_WRAP NOT_APP \
+  CONFIG.USE_TEMPLATE Custom \
+  CONFIG.SELIO_ACTIVE_EDGE DDR \
+  CONFIG.SELIO_INTERFACE_TYPE NETWORKING \
+  CONFIG.BUS_SIG_TYPE SINGLE \
+  CONFIG.CLK_TAP 0 \
+  CONFIG.CLK_DELAY NONE \
+  CONFIG.SELIO_CLK_SIG_TYPE SINGLE \
+  CONFIG.BUS_TAP_RESET NOT_APP \
+  CONFIG.BUS_DIR INPUTS \
+  CONFIG.INTERFACE_TYPE NETWORKING \
+  CONFIG.SELIO_DDR_ALIGNMENT SAME_EDGE_PIPELINED \
+  CONFIG.SELIO_BUS_IN_TAP 16 \
+  CONFIG.ACTIVE_EDGE RISING \
+  CONFIG.SELIO_CLK_BUF MMCM \
+  CONFIG.NOTES None \
+  CONFIG.CLK_FWD false \
+  CONFIG.IDDR_RST_TYPE ASYNC \
+  CONFIG.BUS_IN_DELAY NONE \
+  CONFIG.BUS_OUT_DELAY NONE \
+  CONFIG.SELIO_BUS_OUT_TAP 0 \
+  CONFIG.USE_SERIALIZATION false \
+  CONFIG.CLK_IO_STD LVCMOS18 \
+  CONFIG.CLK_FWD_SIG_TYPE SINGLE \
+  CONFIG.SELIO_BUS_IN_DELAY NONE \
+  CONFIG.SELIO_ODDR_ALIGNMENT SAME_EDGE \
+  CONFIG.BUS_IO_STD LVCMOS25 \
+  CONFIG.BUS_OUT_TAP 0 \
+  CONFIG.SYSTEM_DATA_WIDTH 13 \
+  CONFIG.CONFIG_CLK_FWD false \
+  CONFIG.DDR_ALIGNMENT C0 \
+  CONFIG.Component_Name WP1_system_selectio_wiz_0_0 \
+  CONFIG.ENABLE_BITSLIP false \
+  CONFIG.CLK_EN false \
+  CONFIG.BUS_IN_TAP 0 \
+  CONFIG.ENABLE_TRAIN false \
+  CONFIG.SERIALIZATION_FACTOR 4 \
+  CONFIG.SELIO_CLK_IO_STD LVCMOS25 \
+  CONFIG.USE_PHASE_DETECTOR false \
+  CONFIG.SELIO_IDDR_RST_TYPE ASYNC \
+  CONFIG.TRAIN_CONSTANT 0 \
+  CONFIG.SELIO_BUS_OUT_DELAY NONE \
+  CONFIG.CLK_FWD_IO_STD LVCMOS25 " [get_ips WP1_system_selectio_wiz_0_0]
+
+

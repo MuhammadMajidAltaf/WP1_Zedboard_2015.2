@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="32" version="2.0">
+<workbenchAdvisor/>
+<window height="633" width="1421" x="58" y="518">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="229" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.asm.AsmEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1424881991358" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@2e604294">
+<info part="org.eclipse.ui.internal.EditorStack@2e604294">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.hdf" partName="system.hdf" path="C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1_system_hw_platform_1/system.hdf" title="system.hdf" tooltip="WP1_system_hw_platform_1/system.hdf" workbook="org.eclipse.ui.internal.EditorStack@2e604294">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WP1_system_hw_platform_1/system.hdf"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="setup_ADC.c" partName="setup_ADC.c" path="C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/adc_config/src/setup_ADC.c" title="setup_ADC.c" tooltip="adc_config/src/setup_ADC.c" workbook="org.eclipse.ui.internal.EditorStack@2e604294">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/adc_config/src/setup_ADC.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="6414" selectionTopPixel="1743"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ADC_read.c" partName="ADC_read.c" path="C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/adc_config/src/ADC_read.c" title="ADC_read.c" tooltip="adc_config/src/ADC_read.c" workbook="org.eclipse.ui.internal.EditorStack@2e604294">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/adc_config/src/ADC_read.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4920" selectionTopPixel="2072"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pulse.h" partName="pulse.h" path="C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/adc_config/src/pulse.h" title="pulse.h" tooltip="adc_config/src/pulse.h" workbook="org.eclipse.ui.internal.EditorStack@2e604294">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/adc_config/src/pulse.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1291" selectionTopPixel="0"/>
+</editor>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/adc_config_bsp/system.mss" title="system.mss" tooltip="adc_config_bsp/system.mss" workbook="org.eclipse.ui.internal.EditorStack@2e604294">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/adc_config_bsp/system.mss"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.xilinx.sdk.targetmanager.ui.TargetManagementView" partName="Target Connections">
+<viewState/>
+</view>
+<view id="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" partName="XMD Console"/>
+<view id="com.xilinx.sdk.logger.SdkLogView" partName="SDK Log">
+<viewState/>
+</view>
+<view id="com.xilinx.sdk.targetmanager.ui.xsdb.XSDBConsoleView" partName="XSDB Console"/>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Infos (3 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal 1">
+<viewState ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" Title="Terminal 1" _keys_="ConnectionType,Title,connectionManageractive,connectionManagerconnection0ConnectionType,connectionManagerconnection0Encoding,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagerconnection0Summary,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagersize,org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits" connectionManageractive="connection0" connectionManagerconnection0ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection0Encoding="ISO-8859-1" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagerconnection0Summary="COM15, 115200, 8, 1, None, None" connectionManagersize="1">
+<connectionManagerconnection0org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="115200" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM15" StopBits="1"/>
+</serial>
+<telnet>&#x0A;<TelnetConnector NetworkPort="23" Timeout="10"/>
+</telnet>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection0org>
+<org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="115200" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM15" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</org>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.codan.internal.ui.views.ProblemDetails"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.AppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.sw.ui.NewBspWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.xilinx.sdk.targetmanager.ui.TargetManagementView"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.29855537"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5d4aaa93" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@75aef8a1" ratio="0.16928886" ratioLeft="269" ratioRight="1320" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottom" ratio="0.6451613" ratioLeft="400" ratioRight="220" relationship="4" relative="org.eclipse.ui.internal.ViewStack@75aef8a1">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@39e1297f" ratio="0.5" ratioLeft="375" ratioRight="375" relationship="2" relative="bottom">
+<folder appearance="2" expanded="2">
+<page content="com.xilinx.sdk.logger.SdkLogView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.internal.ViewStack@75aef8a1">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.27562642" ratioLeft="363" ratioRight="954" relationship="2" relative="org.eclipse.ui.internal.ViewStack@75aef8a1"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@671c1175" ratio="0.6888186" ratioLeft="653" ratioRight="295" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6d6b6e88" ratio="0.74958813" ratioLeft="455" ratioRight="152" relationship="4" relative="topLeft">
+<folder activePageID="com.xilinx.sdk.targetmanager.ui.TargetManagementView" appearance="2" expanded="2">
+<page content="com.xilinx.sdk.targetmanager.ui.TargetManagementView" label="Target Connections"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.SignalsView"/>
+<show_view_action id="org.eclipse.debug.ui.RegisterView"/>
+<show_view_action id="org.eclipse.debug.ui.ModuleView"/>
+<show_view_action id="org.eclipse.debug.ui.MemoryView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.executablesView"/>
+<show_view_action id="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view"/>
+<show_view_action id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="com.xilinx.sdk.targetmanager.ui.XmdConsoleView"/>
+<view id="com.xilinx.sdk.targetmanager.ui.xsdb.XSDBConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.xilinx.sdk.logger.SdkLogView"/>
+<view id="com.xilinx.sdk.targetmanager.ui.TargetManagementView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@21fc5736" ratio="0.74959874" ratioLeft="467" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="com.xilinx.sdk.targetmanager.ui.TargetManagementView" appearance="2" expanded="2">&#x0A;<page content="com.xilinx.sdk.targetmanager.ui.TargetManagementView" label="Target Connections"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@37cfa77a" ratio="0.59969324" ratioLeft="782" ratioRight="522" relationship="2" relative="org.eclipse.ui.internal.ViewStack@21fc5736">&#x0A;<folder activePageID="com.xilinx.sdk.logger.SdkLogView" appearance="2" expanded="2">&#x0A;<page content="com.xilinx.sdk.logger.SdkLogView" label="SDK Log"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.24936062" ratioLeft="195" ratioRight="587" relationship="2" relative="org.eclipse.ui.internal.ViewStack@21fc5736">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<page content="org.eclipse.tcf.TraceView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4496788" ratioLeft="210" ratioRight="257" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="978" ratioRight="326" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<page content="org.eclipse.tcf.ProfilerView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="652" ratioRight="652" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" label="XMD Console"/>
+<page content="com.xilinx.sdk.targetmanager.ui.xsdb.XSDBConsoleView" label="XSDB Console"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/ADC_read.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/pulse.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/LED_CONTROLLER/src/pulse.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/setup_ADC.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/setup_ADC.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/adc_config_bsp/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/adc_config_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/setup_ADC.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/ADC_read.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/adc_config_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/adc_config_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/adc_config/src/pulse.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/adc_config_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/adc_config_bsp/system.mss"/>
+</editors>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="4886" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="4868" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="4868" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="9529" y="2"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="4232" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="2941" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="2941" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position/>
+</item>
+<item historyLabel="pulse.h" index="2">
+<position info="not_deleted" x="0" y="1905"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position info="not_deleted" x="2113" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="2941" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="2941" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position info="not_deleted" x="403" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="2941" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position info="not_deleted" x="403" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="6612" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="1">
+<position info="not_deleted" x="380" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="6612" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="3">
+<position info="not_deleted" x="3865" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="5104" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="4">
+<position info="not_deleted" x="2840" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="0">
+<position info="not_deleted" x="1209" y="0"/>
+</item>
+<item historyLabel="Makefile" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.mss" index="6"/>
+<item historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="2840" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="8">
+<position info="not_deleted" x="1194" y="0"/>
+</item>
+<item historyLabel="system.mss" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.mss" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="3141" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="8">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="11">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="8">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="3141" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="8">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="6464" y="0"/>
+</item>
+<item historyLabel="ADC_read.c" index="8">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="pulse.h" index="11">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="6414" y="2"/>
+</item>
+<item historyLabel="ADC_read.c" index="8">
+<position info="not_deleted" x="4920" y="0"/>
+</item>
+<item historyLabel="system.mss" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="6414" y="2"/>
+</item>
+<item historyLabel="system.mss" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="setup_ADC.c" index="7">
+<position info="not_deleted" x="6414" y="2"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="adc_config_bsp/system.mss">
+<persistable path="/adc_config_bsp/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="adc_config_bsp/Makefile">
+<persistable path="/adc_config_bsp/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pulse.h" tooltip="LED_CONTROLLER/src/pulse.h">
+<persistable path="/LED_CONTROLLER/src/pulse.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="led.c" tooltip="LED_CONTROLLER/src/led.c">
+<persistable path="/LED_CONTROLLER/src/led.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pulse.h" tooltip="adc_config/src/pulse.h">
+<persistable path="/adc_config/src/pulse.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xspips.h" tooltip="adc_config_bsp/ps7_cortexa9_0/include/xspips.h">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/include/xspips.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpiops_g.c" tooltip="adc_config_bsp/ps7_cortexa9_0/libsrc/gpiops_v2_1/src/xgpiops_g.c">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/libsrc/gpiops_v2_1/src/xgpiops_g.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="self_test.c" tooltip="uart_self_test/src/self_test.c">
+<persistable path="/uart_self_test/src/self_test.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartps.h" tooltip="adc_config_bsp/ps7_cortexa9_0/include/xuartps.h">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/include/xuartps.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sleep.h" tooltip="adc_config_bsp/ps7_cortexa9_0/include/sleep.h">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/include/sleep.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uartps_header.h" tooltip="adc_config/src/uartps_header.h">
+<persistable path="/adc_config/src/uartps_header.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\Xilinx\SDK\2014.2\gnu\arm\nt\arm-xilinx-eabi\include\stdio.h">
+<persistable path="C:\Xilinx\SDK\2014.2\gnu\arm\nt\arm-xilinx-eabi\include\stdio.h" project="adc_config"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" tooltip="adc_config_bsp/ps7_cortexa9_0/include/xil_io.h">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/include/xil_io.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="adc_config_bsp/ps7_cortexa9_0/include/xparameters.h">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/include/xparameters.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xdevcfg.h" tooltip="adc_config_bsp/ps7_cortexa9_0/include/xdevcfg.h">
+<persistable path="/adc_config_bsp/ps7_cortexa9_0/include/xdevcfg.h"/>
+</file>
+</mruList>
+</workbench>

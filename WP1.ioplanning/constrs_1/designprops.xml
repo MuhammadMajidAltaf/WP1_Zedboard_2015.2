@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="4">
+	<CompatParts>
+	</CompatParts>
+	<PortProps>
+		<Port Name="ADC1_clk[0]" OffChipTerm="NONE"/>
+	</PortProps>
+</Compat>
+

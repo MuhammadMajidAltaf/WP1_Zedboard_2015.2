@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Oct 05 14:15:05 2015
+# Process ID: 9800
+# Log file: C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.runs/impl_1/WP1_system.vdi
+# Journal file: C:/Xilinx/Vivado/2014.2/progetti/WP1/WP1/WP1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source WP1_system.tcl -notrace

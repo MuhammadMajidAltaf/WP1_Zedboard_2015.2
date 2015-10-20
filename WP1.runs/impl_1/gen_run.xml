@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1445354372">
+  <File Type="OPT-DCP" Name="WP1_system_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="WP1_system_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="WP1_system_routed.dcp"/>
+  <File Type="PA-TCL" Name="WP1_system.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="WP1_system_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="WP1_system_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="WP1_system.hwdef"/>
+  <File Type="PLACE-DCP" Name="WP1_system_placed.dcp"/>
+  <File Type="PLACE-IO" Name="WP1_system_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="WP1_system_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="WP1_system_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="WP1_system_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="WP1_system_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="WP1_system_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="WP1_system_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="WP1_system_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="WP1_system_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="WP1_system.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="WP1_system_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="WP1_system_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="WP1_system_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="WP1_system_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="WP1_system_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="WP1_system_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="WP1_system_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="WP1_system_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="WP1_system_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="WP1_system_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="WP1_system_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="WP1_system_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="WP1_system_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="WP1_system_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="WP1_system_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="WP1_system_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="WP1_system.bit"/>
+  <File Type="BG-BIN" Name="WP1_system.bin"/>
+  <File Type="BITSTR-MSK" Name="WP1_system.msk"/>
+  <File Type="BITSTR-RBT" Name="WP1_system.rbt"/>
+  <File Type="BITSTR-NKY" Name="WP1_system.nky"/>
+  <File Type="BITSTR-BMM" Name="WP1_system_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="WP1_system.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="WP1_system.sysdef"/>
+  <File Type="BG-BGN" Name="WP1_system.bgn"/>
+  <File Type="BG-DRC" Name="WP1_system.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/WP1_system.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_Interface_ADC_0_2/WP1_system_Interface_ADC_0_2.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_delay_input_0_1/WP1_system_delay_input_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/hdl/WP1_system_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_axi_bram_ctrl_0_1/WP1_system_axi_bram_ctrl_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_axi_bram_ctrl_1_0/WP1_system_axi_bram_ctrl_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_axi_gpio_0_0/WP1_system_axi_gpio_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_blk_mem_gen_0_2/WP1_system_blk_mem_gen_0_2.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_blk_mem_gen_1_0/WP1_system_blk_mem_gen_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_0/WP1_system_processing_system7_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_processing_system7_0_axi_periph_0/WP1_system_processing_system7_0_axi_periph_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_rst_processing_system7_0_100M_0/WP1_system_rst_processing_system7_0_100M_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_0_0/WP1_system_selectio_wiz_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_selectio_wiz_1_0/WP1_system_selectio_wiz_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_util_vector_logic_0_0/WP1_system_util_vector_logic_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/WP1_system/ip/WP1_system_xlconstant_0_0/WP1_system_xlconstant_0_0.upgrade_log"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="WP1_system"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/roberto_pcb">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/WP1/roberto_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/roberto_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1424726366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/migrated_io_properties.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/WP1/roberto_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="completion_proposal_size">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="227191" key="searchFlags"/>
+		<item value="true" key="caseSensitive"/>
+		<list key="previousPatterns">
+			<item value="SpiPs_Init_SPI"/>
+			<item value="ADC0A"/>
+			<item value="ADC"/>
+			<item value="XUartPs_CfgInitialize"/>
+			<item value="XUartLite_RecvByte"/>
+			<item value="PAR_PS7_I2C_0_DEVICE_ID0"/>
+			<item value="MuxInit"/>
+			<item value="XPAR_PS7_I2C_0_DEVICE_ID"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="525" key="size.width"/>
+		<item value="249" key="size.height"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+</section>

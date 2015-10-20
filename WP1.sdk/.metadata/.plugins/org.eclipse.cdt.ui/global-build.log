@@ -1,0 +1,425 @@
+17:00:57 **** Build of project adc_config_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/spips_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/spips_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/spips_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/spips_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spips"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project adc_config ****
+
+Nothing to build for project adc_config
+17:02:32 **** Auto Build of configuration Debug for project adc_config ****
+make all 
+Building file: ../src/ADC_read.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ADC_read.d" -MT"src/ADC_read.d" -o "src/ADC_read.o" "../src/ADC_read.c"
+../src/ADC_read.c: In function 'main':
+../src/ADC_read.c:55:7: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+       Xil_ICacheEnable();
+       ^
+../src/ADC_read.c:56:7: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+       Xil_DCacheEnable();
+       ^
+../src/ADC_read.c:83:6: warning: implicit declaration of function 'SpiPs_Init_SPI' [-Wimplicit-function-declaration]
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+      ^
+../src/ADC_read.c:66:6: warning: variable 'Statuss' set but not used [-Wunused-but-set-variable]
+  int Statuss;
+      ^
+../src/ADC_read.c:90:5: warning: assignment makes pointer from integer without a cast [enabled by default]
+ led = 0x41200000;
+     ^
+../src/ADC_read.c:111:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer1 = 0x40000000;
+         ^
+../src/ADC_read.c:112:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer2 = 0x40010000;
+         ^
+../src/ADC_read.c:221:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/ADC_read.c:222:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+../src/ADC_read.c:54:22: warning: unused variable 'ps7_uart_0' [-Wunused-variable]
+       static XUartPs ps7_uart_0;
+                      ^
+../src/ADC_read.c:53:22: warning: unused variable 'intc' [-Wunused-variable]
+       static XScuGic intc;
+                      ^
+Finished building: ../src/ADC_read.c
+ 
+Building file: ../src/setup_ADC.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/setup_ADC.d" -MT"src/setup_ADC.d" -o "src/setup_ADC.o" "../src/setup_ADC.c"
+Finished building: ../src/setup_ADC.c
+ 
+Building file: ../src/xdevcfg_selftest_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_selftest_example.d" -MT"src/xdevcfg_selftest_example.d" -o "src/xdevcfg_selftest_example.o" "../src/xdevcfg_selftest_example.c"
+Finished building: ../src/xdevcfg_selftest_example.c
+ 
+Building file: ../src/xdmaps_example_w_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdmaps_example_w_intr.d" -MT"src/xdmaps_example_w_intr.d" -o "src/xdmaps_example_w_intr.o" "../src/xdmaps_example_w_intr.c"
+Finished building: ../src/xdmaps_example_w_intr.c
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.d" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.d" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+Finished building: ../src/xemacps_example_util.c
+ 
+Building file: ../src/xqspips_selftest_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xqspips_selftest_example.d" -MT"src/xqspips_selftest_example.d" -o "src/xqspips_selftest_example.o" "../src/xqspips_selftest_example.c"
+Finished building: ../src/xqspips_selftest_example.c
+ 
+Building file: ../src/xscugic_tapp_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscugic_tapp_example.d" -MT"src/xscugic_tapp_example.d" -o "src/xscugic_tapp_example.o" "../src/xscugic_tapp_example.c"
+Finished building: ../src/xscugic_tapp_example.c
+ 
+Building file: ../src/xscutimer_intr_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.d" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+Finished building: ../src/xscutimer_intr_example.c
+ 
+Building file: ../src/xscutimer_polled_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_polled_example.d" -MT"src/xscutimer_polled_example.d" -o "src/xscutimer_polled_example.o" "../src/xscutimer_polled_example.c"
+Finished building: ../src/xscutimer_polled_example.c
+ 
+Building file: ../src/xscuwdt_intr_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscuwdt_intr_example.d" -MT"src/xscuwdt_intr_example.d" -o "src/xscuwdt_intr_example.o" "../src/xscuwdt_intr_example.c"
+Finished building: ../src/xscuwdt_intr_example.c
+ 
+Building file: ../src/xspips_selftest_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xspips_selftest_example.d" -MT"src/xspips_selftest_example.d" -o "src/xspips_selftest_example.o" "../src/xspips_selftest_example.c"
+Finished building: ../src/xspips_selftest_example.c
+ 
+Building file: ../src/xuartps_intr_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_intr_example.d" -MT"src/xuartps_intr_example.d" -o "src/xuartps_intr_example.o" "../src/xuartps_intr_example.c"
+Finished building: ../src/xuartps_intr_example.c
+ 
+Building file: ../src/xuartps_polled_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_polled_example.d" -MT"src/xuartps_polled_example.d" -o "src/xuartps_polled_example.o" "../src/xuartps_polled_example.c"
+Finished building: ../src/xuartps_polled_example.c
+ 
+Building target: adc_config.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_config_bsp/ps7_cortexa9_0/lib -o "adc_config.elf"  ./src/ADC_read.o ./src/setup_ADC.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o ./src/xspips_selftest_example.o ./src/xuartps_intr_example.o ./src/xuartps_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: adc_config.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size adc_config.elf  |tee "adc_config.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117840	   3272	  44608	 165720	  28758	adc_config.elf
+Finished building: adc_config.elf.size
+ 
+17:05:06 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:05:49 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:06:18 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:06:48 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:07:01 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:07:36 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:11:40 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:14:18 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:16:25 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:17:51 **** Auto Build of configuration Debug for project adc_config ****
+make all 
+Building file: ../src/ADC_read.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ADC_read.d" -MT"src/ADC_read.d" -o "src/ADC_read.o" "../src/ADC_read.c"
+../src/ADC_read.c: In function 'main':
+../src/ADC_read.c:55:7: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+       Xil_ICacheEnable();
+       ^
+../src/ADC_read.c:56:7: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+       Xil_DCacheEnable();
+       ^
+../src/ADC_read.c:83:6: warning: implicit declaration of function 'SpiPs_Init_SPI' [-Wimplicit-function-declaration]
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+      ^
+../src/ADC_read.c:66:6: warning: variable 'Statuss' set but not used [-Wunused-but-set-variable]
+  int Statuss;
+      ^
+../src/ADC_read.c:90:5: warning: assignment makes pointer from integer without a cast [enabled by default]
+ led = 0x41200000;
+     ^
+../src/ADC_read.c:111:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer1 = 0x40000000;
+         ^
+../src/ADC_read.c:112:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer2 = 0x40010000;
+         ^
+../src/ADC_read.c:221:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/ADC_read.c:222:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+../src/ADC_read.c:54:22: warning: unused variable 'ps7_uart_0' [-Wunused-variable]
+       static XUartPs ps7_uart_0;
+                      ^
+../src/ADC_read.c:53:22: warning: unused variable 'intc' [-Wunused-variable]
+       static XScuGic intc;
+                      ^
+Finished building: ../src/ADC_read.c
+ 
+Building target: adc_config.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_config_bsp/ps7_cortexa9_0/lib -o "adc_config.elf"  ./src/ADC_read.o ./src/setup_ADC.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o ./src/xspips_selftest_example.o ./src/xuartps_intr_example.o ./src/xuartps_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: adc_config.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size adc_config.elf  |tee "adc_config.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117840	   3272	  44608	 165720	  28758	adc_config.elf
+Finished building: adc_config.elf.size
+ 
+17:17:57 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:28:10 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:29:53 **** Auto Build of configuration Debug for project adc_config ****
+make all 
+Building file: ../src/ADC_read.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ADC_read.d" -MT"src/ADC_read.d" -o "src/ADC_read.o" "../src/ADC_read.c"
+../src/ADC_read.c: In function 'main':
+../src/ADC_read.c:55:7: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+       Xil_ICacheEnable();
+       ^
+../src/ADC_read.c:56:7: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+       Xil_DCacheEnable();
+       ^
+../src/ADC_read.c:83:6: warning: implicit declaration of function 'SpiPs_Init_SPI' [-Wimplicit-function-declaration]
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+      ^
+../src/ADC_read.c:66:6: warning: variable 'Statuss' set but not used [-Wunused-but-set-variable]
+  int Statuss;
+      ^
+../src/ADC_read.c:90:5: warning: assignment makes pointer from integer without a cast [enabled by default]
+ led = 0x41200000;
+     ^
+../src/ADC_read.c:111:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer1 = 0x40000000;
+         ^
+../src/ADC_read.c:112:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer2 = 0x40010000;
+         ^
+../src/ADC_read.c:221:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/ADC_read.c:222:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+../src/ADC_read.c:54:22: warning: unused variable 'ps7_uart_0' [-Wunused-variable]
+       static XUartPs ps7_uart_0;
+                      ^
+../src/ADC_read.c:53:22: warning: unused variable 'intc' [-Wunused-variable]
+       static XScuGic intc;
+                      ^
+Finished building: ../src/ADC_read.c
+ 
+Building target: adc_config.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_config_bsp/ps7_cortexa9_0/lib -o "adc_config.elf"  ./src/ADC_read.o ./src/setup_ADC.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o ./src/xspips_selftest_example.o ./src/xuartps_intr_example.o ./src/xuartps_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: adc_config.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size adc_config.elf  |tee "adc_config.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 117840	   3272	  44608	 165720	  28758	adc_config.elf
+Finished building: adc_config.elf.size
+ 
+17:29:58 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:33:42 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
+17:37:24 **** Auto Build of configuration Debug for project adc_config ****
+make all 
+Building file: ../src/ADC_read.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../adc_config_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ADC_read.d" -MT"src/ADC_read.d" -o "src/ADC_read.o" "../src/ADC_read.c"
+../src/ADC_read.c: In function 'main':
+../src/ADC_read.c:55:7: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+       Xil_ICacheEnable();
+       ^
+../src/ADC_read.c:56:7: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+       Xil_DCacheEnable();
+       ^
+../src/ADC_read.c:83:6: warning: implicit declaration of function 'SpiPs_Init_SPI' [-Wimplicit-function-declaration]
+      Status = SpiPs_Init_SPI(XPAR_PS7_SPI_1_DEVICE_ID);
+      ^
+../src/ADC_read.c:66:6: warning: variable 'Statuss' set but not used [-Wunused-but-set-variable]
+  int Statuss;
+      ^
+../src/ADC_read.c:90:5: warning: assignment makes pointer from integer without a cast [enabled by default]
+ led = 0x41200000;
+     ^
+../src/ADC_read.c:111:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer1 = 0x40000000;
+         ^
+../src/ADC_read.c:112:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+ buffer2 = 0x40010000;
+         ^
+../src/ADC_read.c:221:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/ADC_read.c:222:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+../src/ADC_read.c:113:23: warning: variable 'ADC1B' set but not used [-Wunused-but-set-variable]
+ int ADC0A,ADC0B,ADC1A,ADC1B;
+                       ^
+../src/ADC_read.c:113:17: warning: variable 'ADC1A' set but not used [-Wunused-but-set-variable]
+ int ADC0A,ADC0B,ADC1A,ADC1B;
+                 ^
+../src/ADC_read.c:113:11: warning: variable 'ADC0B' set but not used [-Wunused-but-set-variable]
+ int ADC0A,ADC0B,ADC1A,ADC1B;
+           ^
+../src/ADC_read.c:113:5: warning: variable 'ADC0A' set but not used [-Wunused-but-set-variable]
+ int ADC0A,ADC0B,ADC1A,ADC1B;
+     ^
+../src/ADC_read.c:54:22: warning: unused variable 'ps7_uart_0' [-Wunused-variable]
+       static XUartPs ps7_uart_0;
+                      ^
+../src/ADC_read.c:53:22: warning: unused variable 'intc' [-Wunused-variable]
+       static XScuGic intc;
+                      ^
+Finished building: ../src/ADC_read.c
+ 
+Building target: adc_config.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_config_bsp/ps7_cortexa9_0/lib -o "adc_config.elf"  ./src/ADC_read.o ./src/setup_ADC.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o ./src/xspips_selftest_example.o ./src/xuartps_intr_example.o ./src/xuartps_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: adc_config.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size adc_config.elf  |tee "adc_config.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80744	   2104	  44544	 127392	  1f1a0	adc_config.elf
+Finished building: adc_config.elf.size
+ 
+17:37:30 **** Incremental Build of configuration Debug for project adc_config ****
+make all 
+make: Nothing to be done for `all'.
